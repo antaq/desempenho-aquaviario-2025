@@ -58,4 +58,4 @@ O `index.html` descarta avanços por tecla que chegam menos de 600 ms depois de 
 
 ## Publicação
 
-Repositório `antaq/desempenho-aquaviario-2026`, publicado pelo GitHub Pages a partir da branch `main`, pasta raiz: https://antaq.github.io/desempenho-aquaviario-2026/. Cada push na `main` republica. O nome do repositório e da pasta é 2026, ano da apresentação; os dados são de 2025.
+Repositório `antaq/desempenho-aquaviario-2025`, publicado pelo GitHub Pages a partir da branch `main`, pasta raiz: https://antaq.github.io/desempenho-aquaviario-2025/. Cada push na `main` republica.

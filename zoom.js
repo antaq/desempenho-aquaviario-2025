@@ -16,7 +16,7 @@
  */
 (function () {
   var MIN = 0.8, MAX = 1.4, STEP = 0.1;
-  var KEY = 'desempenho-aquaviario-2026-zoom';
+  var KEY = 'desempenho-aquaviario-2025-zoom';
   var embedded = window.parent !== window;
 
   /* Reescreve as classes de tamanho do Tailwind em função de --tz.
