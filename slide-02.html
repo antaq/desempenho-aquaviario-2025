@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Estrutura da SFC — Desempenho Aquaviário 2025</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+
+<style>:root { --tz-base: 1.3; }
+
+:root { --porto:#0066CC; --mar:#eb6834; --int:#1baf7a; --com:#D97706; }
+body { margin:0; padding:0; overflow:hidden; font-family:'Open Sans',sans-serif; }
+.slide { width:100vw; height:100vh; position:relative; display:flex; flex-direction:column; overflow:hidden; background:#ffffff; }
+.font-montserrat { font-family:'Montserrat',sans-serif; }
+.text-brand { color:#003366; } .bg-brand { background-color:#003366; }
+.text-accent { color:#0066CC; } .bg-accent { background-color:#0066CC; }
+.header-bar { height:10px; background:#003366; width:100%; }
+.secondary-bar { height:4px; background:#0066CC; width:100%; }
+.stat-card { background:linear-gradient(135deg,#003366,#004d99); border-radius:16px; padding:18px 16px; text-align:center; color:white; position:relative; overflow:hidden; }
+.stat-num { font-family:'Montserrat',sans-serif; font-weight:900; font-size:calc(46px * var(--tz)); line-height:1; margin:0; }
+.stat-lbl { font-size:calc(16px * var(--tz)); line-height:1.3; color:#BFD3E8; margin:6px 0 0; }
+.card { display:flex; align-items:flex-start; gap:16px; padding:14px 20px; background:#F8FAFC; border-radius:14px; border-left:5px solid #0066CC; }
+.card-green { background:linear-gradient(135deg,#F0FDF4,#DCFCE7); border-left-color:#22C55E; }
+.card-amber { background:linear-gradient(135deg,#FFFBEB,#FEF3C7); border-left-color:#F59E0B; }
+.card-red   { background:linear-gradient(135deg,#FEF2F2,#FEE2E2); border-left-color:#EF4444; }
+.card-gold  { background:linear-gradient(135deg,#FFFBEB,#FEF3C7); border-left-color:#FFD700; }
+.ico { width:50px; height:50px; border-radius:12px; flex-shrink:0; display:flex; align-items:center; justify-content:center; background:#DBEAFE; }
+.ico i { color:#0066CC; font-size:calc(22px * var(--tz)); }
+.card-amber .ico { background:#FDE68A; } .card-amber .ico i { color:#B45309; }
+.ct { font-family:'Montserrat',sans-serif; font-weight:700; color:#003366; font-size:calc(21px * var(--tz)); line-height:1.25; margin:0; }
+.cd { color:#475569; font-size:calc(17px * var(--tz)); line-height:1.45; margin:3px 0 0; }
+.cd b, .cd strong { color:#003366; }
+.pill { display:inline-block; padding:3px 12px; border-radius:999px; font-family:'Montserrat',sans-serif; font-weight:700; font-size:calc(14px * var(--tz)); letter-spacing:0.04em; }
+.pill-a { background:#DCFCE7; color:#166534; } .pill-b { background:#DBEAFE; color:#1E40AF; }
+.pill-c { background:#FEE2E2; color:#991B1B; } .pill-gold { background:#FEF3C7; color:#92400E; }
+.destaque { background:linear-gradient(135deg,#003366,#0066CC); color:#fff; border-radius:16px; padding:18px 26px; }
+.destaque p { margin:0; }
+.legenda { color:#64748B; font-size:calc(14px * var(--tz)); line-height:1.5; margin:0; }
+.sec { font-family:'Montserrat',sans-serif; font-weight:700; font-size:calc(15px * var(--tz)); letter-spacing:.12em; text-transform:uppercase; color:#64748B; margin:0; }
+.hdr .text-5xl { font-size:46px; line-height:1; } .hdr .text-lg { font-size:19px; line-height:1.5; } .ftr .text-sm { font-size:14px; line-height:1.4; }
+.gap-3 { row-gap:22px; } .gap-4 { row-gap:24px; } .gap-5 { row-gap:26px; } .gap-6 { row-gap:28px; }
+/* painel de gráfico */
+.painel { background:#fff; border:1px solid #E2E8F0; border-radius:16px; padding:16px 22px 8px; box-shadow:0 1px 3px rgba(15,23,42,.05); }
+.painel .ct { margin-bottom:2px; }
+.graf { width:100%; }
+/* barra segmentada alta (uma soma, dividida em partes) */
+.segbar { display:flex; gap:3px; height:46px; width:100%; }
+.segbar .seg { border-radius:6px; display:flex; align-items:center; padding:0 14px; color:#fff; font-family:'Montserrat',sans-serif; font-weight:700; font-size:calc(18px * var(--tz)); white-space:nowrap; min-width:0; }
+.sw { display:inline-block; width:14px; height:14px; border-radius:4px; vertical-align:-1px; margin-right:7px; }
+.chaves { display:flex; flex-wrap:wrap; gap:6px 22px; color:#475569; font-family:'Montserrat',sans-serif; font-weight:600; font-size:calc(15px * var(--tz)); }
+.num-r { font-family:'Montserrat',sans-serif; font-weight:900; color:#003366; font-size:calc(30px * var(--tz)); line-height:1; margin:0; }
+</style>
+</head>
+<body>
+<div class="slide">
+  <div class="header-bar"></div>
+  <div class="secondary-bar"></div>
+
+  <div class="px-16 pt-6 pb-2 hdr">
+    <div class="flex items-center gap-3">
+      <div style="width:5px;height:44px;" class="bg-accent"></div>
+      <div>
+        <p class="font-montserrat font-bold text-gray-400 text-lg uppercase tracking-widest">SFC · Gerências e Unidades Regionais</p>
+        <p class="text-5xl font-montserrat font-bold text-brand uppercase tracking-tight">Estrutura da SFC</p>
+      </div>
+      <div class="ml-auto flex items-center gap-3">
+        <span class="font-montserrat font-bold text-accent uppercase tracking-widest" style="font-size:15px;"><i class="fas fa-sitemap"></i>&nbsp; SFC</span>
+        <img src="assets/logo-antaq-azul.png" alt="ANTAQ" style="height:32px;">
+        <p class="font-montserrat font-bold text-gray-400 tracking-wider" style="font-size:12px; line-height:1.35;">SFC<br/>GPF</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="flex-1 px-16 pb-4 grid grid-cols-12 gap-8 items-center min-h-0">
+    <div class="col-span-4 flex flex-col gap-4">
+      <div class="destaque text-center">
+        <p class="font-montserrat font-black" style="font-size:calc(38px * var(--tz));">SFC</p>
+        <p style="font-size:calc(17px * var(--tz)); color:#DBEAFE;">Superintendência de Fiscalização e Coordenação das Unidades Regionais</p>
+      </div>
+      <div class="grid grid-cols-3 gap-4">
+        <div class="stat-card"><p class="stat-num">6</p><p class="stat-lbl">Gerências Regionais</p></div><div class="stat-card"><p class="stat-num">8</p><p class="stat-lbl">Unidades Regionais</p></div><div class="stat-card"><p class="stat-num">1</p><p class="stat-lbl">Divisão Regional</p></div>
+      </div>
+      <div class="card "><div class="ico"><i class="fas fa-building-columns"></i></div><div><p class="ct">Na sede, em Brasília</p><p class="cd"><b>GPF</b> planeja e cuida da inteligência, <b>GCOR</b> coordena as regionais e <b>GRAT</b> responde por recursos e apoio técnico.</p></div></div>
+      <div class="card card-gold"><div class="ico"><i class="fas fa-compass"></i></div><div><p class="ct">O Norte concentra a carga</p><p class="cd">GREBL e GREMN respondem por <b>1.217</b> dos 2.451 serviços regulados com unidade definida: quase a metade.</p></div></div>
+    </div>
+    <div class="col-span-8 flex flex-col gap-4">
+      <div class="flex items-end justify-between">
+        <p class="sec">Serviços regulados por gerência e área</p>
+        <div class="chaves"><span><span class="sw" style="background:var(--porto);"></span>Porto</span><span><span class="sw" style="background:var(--mar);"></span>Marítima</span><span><span class="sw" style="background:var(--int);"></span>Interior</span></div>
+      </div>
+      <div class="grid grid-cols-2 gap-4">
+
+        <div class="card" style="flex-direction:column; align-items:stretch; gap:8px; padding:14px 20px 16px;">
+          <div class="flex items-center justify-between"><p class="ct">GREBL · Belém</p><span class="pill pill-b">Norte</span></div>
+          <p class="cd" style="margin:0;">URESL São Luís · URESN Santana · DREST Santarém</p>
+          <div class="flex items-center gap-4" style="margin-top:4px;">
+            <div style="flex:1;"><div class="bar-row"><div class="bar-trk" style="display:flex; gap:3px; height:16px; width:100.0%;"><div class="seg" style="flex:366 0 0; background:var(--porto); height:100%; border-radius:4px;" title="Porto: 366"></div><div class="seg" style="flex:76 0 0; background:var(--mar); height:100%; border-radius:4px;" title="Marítima: 76"></div><div class="seg" style="flex:243 0 0; background:var(--int); height:100%; border-radius:4px;" title="Interior: 243"></div></div></div></div>
+            <p class="num-r" style="font-size:calc(26px * var(--tz)); min-width:64px; text-align:right;">685</p>
+          </div>
+        </div>
+
+        <div class="card" style="flex-direction:column; align-items:stretch; gap:8px; padding:14px 20px 16px;">
+          <div class="flex items-center justify-between"><p class="ct">GREMN · Manaus</p><span class="pill pill-b">Norte</span></div>
+          <p class="cd" style="margin:0;">UREPV Porto Velho</p>
+          <div class="flex items-center gap-4" style="margin-top:4px;">
+            <div style="flex:1;"><div class="bar-row"><div class="bar-trk" style="display:flex; gap:3px; height:16px; width:77.7%;"><div class="seg" style="flex:194 0 0; background:var(--porto); height:100%; border-radius:4px;" title="Porto: 194"></div><div class="seg" style="flex:30 0 0; background:var(--mar); height:100%; border-radius:4px;" title="Marítima: 30"></div><div class="seg" style="flex:308 0 0; background:var(--int); height:100%; border-radius:4px;" title="Interior: 308"></div></div></div></div>
+            <p class="num-r" style="font-size:calc(26px * var(--tz)); min-width:64px; text-align:right;">532</p>
+          </div>
+        </div>
+
+        <div class="card" style="flex-direction:column; align-items:stretch; gap:8px; padding:14px 20px 16px;">
+          <div class="flex items-center justify-between"><p class="ct">GRERJ · Rio de Janeiro</p><span class="pill pill-b">Sudeste</span></div>
+          <p class="cd" style="margin:0;">UREVT Vitória</p>
+          <div class="flex items-center gap-4" style="margin-top:4px;">
+            <div style="flex:1;"><div class="bar-row"><div class="bar-trk" style="display:flex; gap:3px; height:16px; width:56.6%;"><div class="seg" style="flex:147 0 0; background:var(--porto); height:100%; border-radius:4px;" title="Porto: 147"></div><div class="seg" style="flex:240 0 0; background:var(--mar); height:100%; border-radius:4px;" title="Marítima: 240"></div><div class="seg" style="flex:1 0 0; background:var(--int); height:100%; border-radius:4px;" title="Interior: 1"></div></div></div></div>
+            <p class="num-r" style="font-size:calc(26px * var(--tz)); min-width:64px; text-align:right;">388</p>
+          </div>
+        </div>
+
+        <div class="card" style="flex-direction:column; align-items:stretch; gap:8px; padding:14px 20px 16px;">
+          <div class="flex items-center justify-between"><p class="ct">GRERE · Recife</p><span class="pill pill-b">Nordeste</span></div>
+          <p class="cd" style="margin:0;">URESV Salvador · UREFT Fortaleza</p>
+          <div class="flex items-center gap-4" style="margin-top:4px;">
+            <div style="flex:1;"><div class="bar-row"><div class="bar-trk" style="display:flex; gap:3px; height:16px; width:46.4%;"><div class="seg" style="flex:166 0 0; background:var(--porto); height:100%; border-radius:4px;" title="Porto: 166"></div><div class="seg" style="flex:102 0 0; background:var(--mar); height:100%; border-radius:4px;" title="Marítima: 102"></div><div class="seg" style="flex:50 0 0; background:var(--int); height:100%; border-radius:4px;" title="Interior: 50"></div></div></div></div>
+            <p class="num-r" style="font-size:calc(26px * var(--tz)); min-width:64px; text-align:right;">318</p>
+          </div>
+        </div>
+
+        <div class="card" style="flex-direction:column; align-items:stretch; gap:8px; padding:14px 20px 16px;">
+          <div class="flex items-center justify-between"><p class="ct">GREFL · Florianópolis</p><span class="pill pill-b">Sul</span></div>
+          <p class="cd" style="margin:0;">URECB Curitiba · UREPL Porto Alegre</p>
+          <div class="flex items-center gap-4" style="margin-top:4px;">
+            <div style="flex:1;"><div class="bar-row"><div class="bar-trk" style="display:flex; gap:3px; height:16px; width:44.4%;"><div class="seg" style="flex:190 0 0; background:var(--porto); height:100%; border-radius:4px;" title="Porto: 190"></div><div class="seg" style="flex:73 0 0; background:var(--mar); height:100%; border-radius:4px;" title="Marítima: 73"></div><div class="seg" style="flex:41 0 0; background:var(--int); height:100%; border-radius:4px;" title="Interior: 41"></div></div></div></div>
+            <p class="num-r" style="font-size:calc(26px * var(--tz)); min-width:64px; text-align:right;">304</p>
+          </div>
+        </div>
+
+        <div class="card" style="flex-direction:column; align-items:stretch; gap:8px; padding:14px 20px 16px;">
+          <div class="flex items-center justify-between"><p class="ct">GREST · Santos</p><span class="pill pill-b">Sudeste</span></div>
+          <p class="cd" style="margin:0;">sem unidade subordinada</p>
+          <div class="flex items-center gap-4" style="margin-top:4px;">
+            <div style="flex:1;"><div class="bar-row"><div class="bar-trk" style="display:flex; gap:3px; height:16px; width:32.7%;"><div class="seg" style="flex:137 0 0; background:var(--porto); height:100%; border-radius:4px;" title="Porto: 137"></div><div class="seg" style="flex:64 0 0; background:var(--mar); height:100%; border-radius:4px;" title="Marítima: 64"></div><div class="seg" style="flex:23 0 0; background:var(--int); height:100%; border-radius:4px;" title="Interior: 23"></div></div></div></div>
+            <p class="num-r" style="font-size:calc(26px * var(--tz)); min-width:64px; text-align:right;">224</p>
+          </div>
+        </div>
+      </div>
+      <p class="legenda">Fontes: Regimento Interno da ANTAQ, art. 83 (estrutura); Universo Fiscalizado (PIF), 16/11/2026 (serviços regulados). A jurisdição soma a gerência e as unidades subordinadas; 38 serviços sem unidade atribuída ficam fora.</p>
+    </div>
+  </div>
+
+  <div class="px-16 pb-4 flex justify-between items-center border-t border-gray-100 pt-3 mx-8 ftr">
+    <p class="text-gray-400 text-sm">Desempenho Aquaviário 2025 · Estatísticas da Fiscalização · SFC — ANTAQ</p>
+    <p class="text-gray-300 text-sm font-mono">2 / 10</p>
+  </div>
+</div>
+<script src="zoom.js"></script>
+<script src="anim.js"></script>
+
+<script>document.addEventListener("keydown",function(e){if(["ArrowRight","ArrowLeft","PageDown","PageUp","Home","End"," ","f","F"].indexOf(e.key)!==-1){e.preventDefault();window.parent.postMessage({type:"slide-nav",key:e.key},"*");}});</script>
+</body>
+</html>

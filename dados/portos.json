@@ -1,0 +1,2227 @@
+{
+ "meta": {
+  "gerado_em": "2026-11-16",
+  "linha_de_fonte_sugerida": "Fonte: ANTAQ — Estatístico Aquaviário e painéis de dados abertos (via conector MCP independente)",
+  "paineis_usados": {
+   "estatistico_aquaviario": "2026-11-16T13:23:37.587622Z",
+   "administracao_portuaria": "2026-11-16T13:04:46.684060Z",
+   "instalacoes_privadas": "2026-11-16T13:00:49.538912Z",
+   "portos_publicos": "2026-09-28T13:01:40.330263Z",
+   "infra_aquaviaria": "2026-11-16T13:24:10.446486Z (última carga na origem: 2026-04-08 09:59)",
+   "movimentacao_portuaria": "2026-11-16T13:24:27.213938Z (última carga na origem: 2026-04-13 15:56)",
+   "estatistico_aquaviario_microdados": "arquivos ANTAQ publicados em 2026-10-06, carregados em 2026-11-08"
+  },
+  "convencoes": "valores brutos da fonte, sem arredondamento; campos *_calculada são razões derivadas aqui (a/b-1), não publicadas; participacao = fração 0-1."
+ },
+ "serie_total": {
+  "fonte": {
+   "painel": "estatistico_aquaviario",
+   "quadro": "Indicadores (movimentação e transporte) por ano (milhões de t) + Movimentação Portuária — Tipo de Instalação (t, soma das 2 linhas do ano) + Movimentação Portuária — Evolução mensal (parcial)"
+  },
+  "atualizado_em": "2026-11-16T13:23:37.587622Z",
+  "medida": "Peso Carga Bruta (t) — movimentação portuária (cabotagem conta 2x: embarque e desembarque)",
+  "anos": [
+   {
+    "ano": 2021,
+    "toneladas": 1209207335.296976,
+    "milhoes_t_publicado": 1209.207335297,
+    "parcial": false
+   },
+   {
+    "ano": 2022,
+    "toneladas": 1220619267.0360851,
+    "milhoes_t_publicado": 1220.619267036,
+    "parcial": false
+   },
+   {
+    "ano": 2023,
+    "toneladas": 1305105576.675175,
+    "milhoes_t_publicado": 1305.105576675,
+    "parcial": false
+   },
+   {
+    "ano": 2024,
+    "toneladas": 1322436996.505047,
+    "milhoes_t_publicado": 1322.43699650501,
+    "parcial": false
+   },
+   {
+    "ano": 2025,
+    "toneladas": 1402731832.755061,
+    "milhoes_t_publicado": 1402.731832755,
+    "parcial": false
+   },
+   {
+    "ano": 2026,
+    "toneladas": 205539907.4379976,
+    "milhoes_t_publicado": 205.539907438,
+    "parcial": true
+   }
+  ],
+  "variacao_2024_2025_calculada": 0.060717324501823544,
+  "parcial_2026": {
+   "meses_cobertos": [
+    "jan",
+    "fev"
+   ],
+   "toneladas_2026_parcial": 205539907.438001,
+   "toneladas_2025_mesmo_periodo": 190330519.96600312,
+   "variacao_calculada": 0.0799103973168076,
+   "variacao_publicada_no_painel": "▲ 7,99%",
+   "mensal_2026": {
+    "jan": 104555951.28,
+    "fev": 100983956.158001
+   },
+   "mensal_2025": {
+    "jan": 93028512.4320004,
+    "fev": 97302007.5340027,
+    "mar": 115287326.414002,
+    "abr": 110124907.386002,
+    "mai": 120338847.629,
+    "jun": 121998232.18,
+    "jul": 126842293.108002,
+    "ago": 134234670.849001,
+    "set": 121822158.384999,
+    "out": 122459470.692001,
+    "nov": 119549799.826,
+    "dez": 119743606.320002
+   },
+   "fonte_mensal": {
+    "painel": "estatistico_aquaviario",
+    "quadro": "Movimentação Portuária — Evolução mensal"
+   }
+  },
+  "conferencia_outro_painel": {
+   "painel": "movimentacao_portuaria (ONTL/Infra S.A.)",
+   "quadro": "Quantidade de Movimentação Portuária Transportada",
+   "atualizado_em": "2026-11-16T13:24:27.213938Z",
+   "toneladas_por_ano": {
+    "2025": 1402801687.705719,
+    "2024": 1322475675.7497172,
+    "2023": 1305105576.674719,
+    "2022": 1220619267.036045,
+    "2021": 1209207335.2971246,
+    "2026": 103963208.27399904
+   },
+   "nota": "ONTL bate com o EA em 2021-2023 e difere em 5 dígitos em 2024-2025; em 2026 o ONTL está em outro ponto do calendário (103.963.208 t, ~1 mês) e a razão EA/ONTL é 1,977. Não misturar painéis."
+  },
+  "ressalvas": [
+   "2026 é PARCIAL (só jan e fev apurados no Estatístico Aquaviário em 16/11/2026); não comparar com ano fechado sem dizer isso.",
+   "Peso BRUTO (inclui embalagem/tara de contêiner); não comparável nem somável com peso líquido do Comex Stat.",
+   "Movimentação ≠ transporte: cabotagem é contada duas vezes na movimentação."
+  ]
+ },
+ "serie_perfil": {
+  "fonte": {
+   "painel": "estatistico_aquaviario",
+   "quadro": "Movimentação Portuária — Perfil de Carga"
+  },
+  "atualizado_em": "2026-11-16T13:23:37.587622Z",
+  "medida": "Peso Carga Bruta (t)",
+  "por_perfil": {
+   "Granel Sólido": {
+    "anos": {
+     "2021": {
+      "toneladas": 706733781.879999,
+      "participacao": 0.584460382640993
+     },
+     "2022": {
+      "toneladas": 715437383.004,
+      "participacao": 0.58612656896796
+     },
+     "2023": {
+      "toneladas": 790485464.472999,
+      "participacao": 0.605686987015184
+     },
+     "2024": {
+      "toneladas": 789823872.463998,
+      "participacao": 0.597248772192086
+     },
+     "2025": {
+      "toneladas": 839780515.087,
+      "participacao": 0.598675025031446
+     },
+     "2026": {
+      "toneladas": 112025400.004,
+      "participacao": 0.545029923387467
+     }
+    },
+    "variacao_2024_2025_calculada": 0.06325035791480116,
+    "jan_fev_2026_vs_2025_publicada_no_painel": "▲ 5,32%",
+    "jan_fev_microdados": {
+     "2025": 106469293.482,
+     "2026": 112163794.41600001
+    }
+   },
+   "Granel Líquido e Gasoso": {
+    "anos": {
+     "2021": {
+      "toneladas": 308654957.868999,
+      "participacao": 0.255253957579724
+     },
+     "2022": {
+      "toneladas": 313551971.702999,
+      "participacao": 0.256879421921946
+     },
+     "2023": {
+      "toneladas": 325499065.743001,
+      "participacao": 0.249404394219408
+     },
+     "2024": {
+      "toneladas": 313797429.209999,
+      "participacao": 0.237287243202753
+     },
+     "2025": {
+      "toneladas": 333027764.469,
+      "participacao": 0.237413707091061
+     },
+     "2026": {
+      "toneladas": 58122378.438,
+      "participacao": 0.282779043556456
+     }
+    },
+    "variacao_2024_2025_calculada": 0.06128264118483795,
+    "jan_fev_2026_vs_2025_publicada_no_painel": "▲ 20,63%",
+    "jan_fev_microdados": {
+     "2025": 48183443.54,
+     "2026": 58129156.664
+    }
+   },
+   "Carga Conteinerizada": {
+    "anos": {
+     "2021": {
+      "toneladas": 132991632.681973,
+      "participacao": 0.109982489189337
+     },
+     "2022": {
+      "toneladas": 128385762.39296,
+      "participacao": 0.105180842102153
+     },
+     "2023": {
+      "toneladas": 127776352.650934,
+      "participacao": 0.0979049932316341
+     },
+     "2024": {
+      "toneladas": 153532591.03696,
+      "participacao": 0.116098227320261
+     },
+     "2025": {
+      "toneladas": 163756919.085024,
+      "participacao": 0.116741429303278
+     },
+     "2026": {
+      "toneladas": 25705511.8560017,
+      "participacao": 0.125063362032289
+     }
+    },
+    "variacao_2024_2025_calculada": 0.06659386114054877,
+    "jan_fev_2026_vs_2025_publicada_no_painel": "▲ 2,43%",
+    "jan_fev_microdados": {
+     "2025": 26267984.788999997,
+     "2026": 25696000.398000002
+    }
+   },
+   "Carga Geral": {
+    "anos": {
+     "2021": {
+      "toneladas": 60826962.8659991,
+      "participacao": 0.0503031705898951
+     },
+     "2022": {
+      "toneladas": 63244149.9359987,
+      "participacao": 0.0518131670079013
+     },
+     "2023": {
+      "toneladas": 61344693.8079991,
+      "participacao": 0.047003625533718
+     },
+     "2024": {
+      "toneladas": 65283103.7939981,
+      "participacao": 0.04936575728487
+     },
+     "2025": {
+      "toneladas": 66166634.1139995,
+      "participacao": 0.0471698385742392
+     },
+     "2026": {
+      "toneladas": 9686617.14000011,
+      "participacao": 0.0471276710237988
+     }
+    },
+    "variacao_2024_2025_calculada": 0.013533828336186327,
+    "jan_fev_2026_vs_2025_publicada_no_painel": "▼ -9,37%",
+    "jan_fev_microdados": {
+     "2025": 10688667.565000001,
+     "2026": 9693387.863
+    }
+   }
+  },
+  "conteiner_jan_fev_no_painel": {
+   "fonte": {
+    "painel": "estatistico_aquaviario",
+    "quadro": "Contêineres — Evolução mensal"
+   },
+   "2025": 25095056.558999598,
+   "2026": 25705511.8559997,
+   "variacao_calculada": 0.024325719113837962,
+   "nota": "Para contêiner, use ESTE jan-fev (do painel): o microdado de jan-fev 2025 dá 26.267.984,8 t contra 25.095.056,6 t do painel, o que inverte o sinal (microdado -2,2%; painel +2,43%). A ferramenta marca 2025 como fora_da_banda na série de contêiner."
+  },
+  "nota_jan_fev": "A variação jan-fev publicada vem do quadro Indicadores (snapshot) do painel. Os valores jan-fev por perfil de 2025 não são publicados pelo painel; os de jan_fev_microdados vêm dos microdados do Estatístico Aquaviário (download.antaq.gov.br/ea), instantâneo diferente do painel (diferença 2026 movimentação: 0,069%).",
+  "ressalvas": [
+   "2026 parcial (jan-fev).",
+   "Granel Sólido não é sinônimo de mineral: inclui soja, milho, trigo etc. (metodologia ANTAQ).",
+   "Carga Conteinerizada em peso bruto inclui tara do contêiner."
+  ]
+ },
+ "serie_instalacao": {
+  "fonte": {
+   "painel": "estatistico_aquaviario",
+   "quadro": "Movimentação Portuária — Tipo de Instalação"
+  },
+  "atualizado_em": "2026-11-16T13:23:37.587622Z",
+  "medida": "Peso Carga Bruta (t)",
+  "por_tipo": {
+   "Terminal Autorizado": {
+    "anos": {
+     "2021": {
+      "toneladas": 799785155.92603,
+      "participacao": 0.661412755761665
+     },
+     "2022": {
+      "toneladas": 798408726.204126,
+      "participacao": 0.654101362944138
+     },
+     "2023": {
+      "toneladas": 853881311.134191,
+      "participacao": 0.654262250039272
+     },
+     "2024": {
+      "toneladas": 846921884.85508,
+      "participacao": 0.64042512958528
+     },
+     "2025": {
+      "toneladas": 906610614.673021,
+      "participacao": 0.646317844582184
+     },
+     "2026": {
+      "toneladas": 136693921.613997,
+      "participacao": 0.665048083935866
+     }
+    },
+    "variacao_2024_2025_calculada": 0.07047725520536585
+   },
+   "Porto Organizado": {
+    "anos": {
+     "2021": {
+      "toneladas": 409422179.370946,
+      "participacao": 0.338587244238288
+     },
+     "2022": {
+      "toneladas": 422210540.831959,
+      "participacao": 0.345898637055927
+     },
+     "2023": {
+      "toneladas": 451224265.540984,
+      "participacao": 0.345737749960857
+     },
+     "2024": {
+      "toneladas": 475515111.649967,
+      "participacao": 0.359574870414759
+     },
+     "2025": {
+      "toneladas": 496121218.08204,
+      "participacao": 0.353682155417867
+     },
+     "2026": {
+      "toneladas": 68845985.8240006,
+      "participacao": 0.334951916064123
+     }
+    },
+    "variacao_2024_2025_calculada": 0.04333428302745812
+   }
+  },
+  "jan_fev_microdados": {
+   "fonte": "microdados do Estatístico Aquaviário (estatistico_aquaviario_microdados, tipo_autoridade, meses 1-2)",
+   "Terminal Autorizado": {
+    "2025": 122338190.104,
+    "2026": 136833859.257
+   },
+   "Porto Organizado": {
+    "2025": 69271199.272,
+    "2026": 68848480.084
+   }
+  },
+  "nota": "\"Terminal Autorizado\" no EA agrega todas as instalações privadas autorizadas (TUP, ETC e demais), não só TUP. \"Porto Organizado\" agrega todos os terminais públicos/arrendados dentro da poligonal.",
+  "ressalvas": [
+   "2026 parcial (jan-fev).",
+   "jan-fev 2025 por tipo não é publicado no painel; veio dos microdados (outro instantâneo da mesma base)."
+  ]
+ },
+ "navegacao_2025": {
+  "fonte": {
+   "painel": "estatistico_aquaviario",
+   "quadro": "Movimentação Portuária — Tipo de Navegação"
+  },
+  "atualizado_em": "2026-11-16T13:23:37.587622Z",
+  "medida": "Peso Carga Bruta (t) — movimentação",
+  "linhas": [
+   {
+    "tipo_navegacao": "Longo Curso",
+    "toneladas": 1005912719.53022,
+    "participacao": 0.717109782526708,
+    "toneladas_2024": 949637709.726088
+   },
+   {
+    "tipo_navegacao": "Cabotagem",
+    "toneladas": 303684194.557056,
+    "participacao": 0.216494833485467,
+    "toneladas_2024": 293836376.119038
+   },
+   {
+    "tipo_navegacao": "Interior",
+    "toneladas": 91420344.7089986,
+    "participacao": 0.065173073408798,
+    "toneladas_2024": 76258395.0560006
+   },
+   {
+    "tipo_navegacao": "Apoio Marítimo",
+    "toneladas": 1399688.63300003,
+    "participacao": 0.00099783051921693,
+    "toneladas_2024": 1194447.53400002
+   },
+   {
+    "tipo_navegacao": "Apoio Portuário",
+    "toneladas": 314885.326,
+    "participacao": 0.000224480060013723,
+    "toneladas_2024": 1510068.07
+   },
+   {
+    "tipo_navegacao": "Não Indentificado",
+    "toneladas": 0,
+    "participacao": 0,
+    "toneladas_2024": 0
+   }
+  ],
+  "transporte_2025_milhoes_t": {
+   "fonte": {
+    "painel": "estatistico_aquaviario",
+    "quadro": "Indicadores (movimentação e transporte) por ano"
+   },
+   "Transporte Longo Curso": 1005.91271953,
+   "Transporte Cabotagem": 222.975436378,
+   "Transporte Vias Interiores": 144.893597202
+  },
+  "ressalvas": [
+   "Movimentação (este bloco) conta cabotagem e interior em cada instalação tocada; transporte conta a viagem uma vez (cabotagem 2025: 303,7 Mt movimentada x 223,0 Mt transportada).",
+   "Não existe \"transporte total\": Vias Interiores é recorte por VIA e contém longo curso (65,5 Mt) e cabotagem (26,2 Mt) já contados; somar as três famílias infla 91,6 Mt.",
+   "Não comparar \"Navegação Interior\" (movimentação, 91,4 Mt) com \"Transporte Vias Interiores\" (144,9 Mt): recortes diferentes. O transporte de navegação interior propriamente dito em 2025 é 53,2 Mt (dado da descrição da ferramenta movimentacao_e_transporte).",
+   "A categoria \"Não Indentificado\" (grafia da fonte) vale 0."
+  ]
+ },
+ "teu": {
+  "fonte": {
+   "painel": "microdados do Estatístico Aquaviário (estatistico_aquaviario_microdados, visao=movimentacao, medida teu)",
+   "origem": "https://download.antaq.gov.br/ea/"
+  },
+  "atualizado_em": "microdados carregados em 2026-11-08 (arquivos publicados pela ANTAQ em 2026-10-06)",
+  "anos": [
+   {
+    "ano": 2021,
+    "teu": 11809055.25,
+    "parcial": false
+   },
+   {
+    "ano": 2022,
+    "teu": 11698313.25,
+    "parcial": false
+   },
+   {
+    "ano": 2023,
+    "teu": 11627754.9,
+    "parcial": false
+   },
+   {
+    "ano": 2024,
+    "teu": 13907871,
+    "parcial": false
+   },
+   {
+    "ano": 2025,
+    "teu": 15344569.55,
+    "parcial": false
+   },
+   {
+    "ano": 2026,
+    "teu": 2454019.65,
+    "parcial": true
+   }
+  ],
+  "parcial_2026": {
+   "meses_cobertos": [
+    "jan",
+    "fev"
+   ],
+   "teu_2026_jan_fev": 2454019.65,
+   "teu_2025_jan_fev": 2398441.75,
+   "variacao_calculada": 0.023172503564032665
+  },
+  "variacao_2024_2025_calculada": 0.10330111272961906,
+  "conferencia_com_o_painel": {
+   "2021": {
+    "diferenca_anual": 0.0,
+    "meses_comparados": 12,
+    "meses_fora_da_banda": 0
+   },
+   "2022": {
+    "diferenca_anual": 0.0,
+    "meses_comparados": 12,
+    "meses_fora_da_banda": 0
+   },
+   "2023": {
+    "diferenca_anual": 0.0,
+    "meses_comparados": 12,
+    "meses_fora_da_banda": 0
+   },
+   "2024": {
+    "diferenca_anual": 0.0,
+    "meses_comparados": 12,
+    "meses_fora_da_banda": 0
+   },
+   "2025": {
+    "diferenca_anual": 0.00716,
+    "meses_comparados": 12,
+    "meses_fora_da_banda": 1
+   },
+   "2026": {
+    "diferenca_anual": -0.00037,
+    "meses_comparados": 2,
+    "meses_fora_da_banda": 0
+   }
+  },
+  "ressalvas": [
+   "O painel Estatístico Aquaviário NÃO publica TEU nos quadros extraídos (só peso bruto de contêiner); TEU vem dos microdados, que são outro instantâneo da mesma base — citar como \"microdados do Estatístico Aquaviário\".",
+   "2025 está \"fora_da_banda\" na conferência da série de contêiner com o painel (diferença anual 0,716%, 1 mês fora da banda).",
+   "TEU com frações (ex.: x,25) vem assim da fonte.",
+   "Jan-fev 2025 em TEU vem dos microdados, cujo peso de contêiner em jan-fev 2025 diverge do painel (26,27 Mt x 25,10 Mt); a variação jan-fev de TEU é indicativa.",
+   "2026 parcial (jan-fev)."
+  ]
+ },
+ "mercadorias_2025": {
+  "fonte": {
+   "painel": "estatistico_aquaviario",
+   "quadro": "Movimentação Portuária — Grupo de Mercadoria"
+  },
+  "atualizado_em": "2026-11-16T13:23:37.587622Z",
+  "medida": "Peso Carga Bruta (t)",
+  "top10": [
+   {
+    "posicao": 1,
+    "mercadoria": "Minério de Ferro",
+    "toneladas_2025": 425743250.655,
+    "participacao_2025": 0.303510079912304,
+    "toneladas_2024": 399510837.075,
+    "variacao_2024_2025_calculada": 0.06566133167265087,
+    "e_conteiner_agregado": false
+   },
+   {
+    "posicao": 2,
+    "mercadoria": "Petróleo e Derivados (Óleo Bruto)",
+    "toneladas_2025": 221726176.581,
+    "participacao_2025": 0.158067402053268,
+    "toneladas_2024": 203496295.345,
+    "variacao_2024_2025_calculada": 0.0895833568129274,
+    "e_conteiner_agregado": false
+   },
+   {
+    "posicao": 3,
+    "mercadoria": "Contêineres",
+    "toneladas_2025": 163756919.084937,
+    "participacao_2025": 0.116741429303216,
+    "toneladas_2024": 153532591.036957,
+    "variacao_2024_2025_calculada": 0.06659386114000321,
+    "e_conteiner_agregado": true
+   },
+   {
+    "posicao": 4,
+    "mercadoria": "Soja",
+    "toneladas_2025": 139738561.552,
+    "participacao_2025": 0.0996188710407684,
+    "toneladas_2024": 122504780.135,
+    "variacao_2024_2025_calculada": 0.1406784404494943,
+    "e_conteiner_agregado": false
+   },
+   {
+    "posicao": 5,
+    "mercadoria": "Petróleo e Derivados (Sem Óleo Bruto)",
+    "toneladas_2025": 84734430.934,
+    "participacao_2025": 0.0604067213385898,
+    "toneladas_2024": 82003774.644,
+    "variacao_2024_2025_calculada": 0.0332991536286531,
+    "e_conteiner_agregado": false
+   },
+   {
+    "posicao": 6,
+    "mercadoria": "Milho",
+    "toneladas_2025": 62061860.184,
+    "participacao_2025": 0.0442435672555526,
+    "toneladas_2024": 56436436.88,
+    "variacao_2024_2025_calculada": 0.09967715212002592,
+    "e_conteiner_agregado": false
+   },
+   {
+    "posicao": 7,
+    "mercadoria": "Adubos (fertilizantes)",
+    "toneladas_2025": 49266535.244,
+    "participacao_2025": 0.0351218487337239,
+    "toneladas_2024": 44773378.38,
+    "variacao_2024_2025_calculada": 0.10035331320915164,
+    "e_conteiner_agregado": false
+   },
+   {
+    "posicao": 8,
+    "mercadoria": "Bauxita",
+    "toneladas_2025": 34521756.74,
+    "participacao_2025": 0.0246103752220399,
+    "toneladas_2024": 33864719.79,
+    "variacao_2024_2025_calculada": 0.019401812685130304,
+    "e_conteiner_agregado": false
+   },
+   {
+    "posicao": 9,
+    "mercadoria": "Açúcar",
+    "toneladas_2025": 31161578.432,
+    "participacao_2025": 0.0222149221286282,
+    "toneladas_2024": 34889874.305,
+    "variacao_2024_2025_calculada": -0.10685896545249818,
+    "e_conteiner_agregado": false
+   },
+   {
+    "posicao": 10,
+    "mercadoria": "Ferro e Aço",
+    "toneladas_2025": 26988938.0640001,
+    "participacao_2025": 0.0192402691902937,
+    "toneladas_2024": 25444853.411,
+    "variacao_2024_2025_calculada": 0.060683574318906475,
+    "e_conteiner_agregado": false
+   }
+  ],
+  "ressalvas": [
+   "\"Contêineres\" é a carga conteinerizada inteira tratada como grupo (o conteúdo dos contêineres não é aberto aqui); se quiser só mercadorias, pule essa linha e use até a 9ª.",
+   "Nomenclatura Simplificada é a classificação da ANTAQ; não é capítulo SH/NCM.",
+   "Petróleo aparece em dois grupos: com e sem óleo bruto."
+  ]
+ },
+ "ranking_portos_2025": {
+  "fonte": {
+   "painel": "estatistico_aquaviario",
+   "quadro": "Movimentação Portuária — Instalação Portuária (toneladas) + Movimentação Portuária — Instalação × Perfil × Mercadoria (perfil predominante; quadro derivado pelo servidor)"
+  },
+  "atualizado_em": "2026-11-16T13:23:37.587622Z",
+  "medida": "Peso Carga Bruta (t)",
+  "linhas": [
+   {
+    "posicao": 1,
+    "porto": "Santos",
+    "uf": "SP",
+    "toneladas_2025": 142819073.037989,
+    "toneladas_2024": 138692349.288977,
+    "variacao_2024_2025_calculada": 0.02975451616594671,
+    "perfil_predominante": "Granel Sólido",
+    "participacao_do_perfil": 0.544391192192563
+   },
+   {
+    "posicao": 2,
+    "porto": "Paranaguá",
+    "uf": "PR",
+    "toneladas_2025": 65235546.4390001,
+    "toneladas_2024": 59280248.7740001,
+    "variacao_2024_2025_calculada": 0.10046006533649954,
+    "perfil_predominante": "Granel Sólido",
+    "participacao_do_perfil": 0.6665681590428729
+   },
+   {
+    "posicao": 3,
+    "porto": "Itaguaí",
+    "uf": "RJ",
+    "toneladas_2025": 62899609.347,
+    "toneladas_2024": 60678240.6170001,
+    "variacao_2024_2025_calculada": 0.036608983836910136,
+    "perfil_predominante": "Granel Sólido",
+    "participacao_do_perfil": 0.9579137092029291
+   },
+   {
+    "posicao": 4,
+    "porto": "Itaqui",
+    "uf": "MA",
+    "toneladas_2025": 36771879.977,
+    "toneladas_2024": 33884493.872,
+    "variacao_2024_2025_calculada": 0.08521260833663957,
+    "perfil_predominante": "Granel Sólido",
+    "participacao_do_perfil": 0.704657475119769
+   },
+   {
+    "posicao": 5,
+    "porto": "Rio Grande",
+    "uf": "RS",
+    "toneladas_2025": 31634709.184,
+    "toneladas_2024": 29318642.284,
+    "variacao_2024_2025_calculada": 0.078996389995315,
+    "perfil_predominante": "Granel Sólido",
+    "participacao_do_perfil": 0.46426751570797703
+   },
+   {
+    "posicao": 6,
+    "porto": "Suape",
+    "uf": "PE",
+    "toneladas_2025": 24253346.1449999,
+    "toneladas_2024": 24792232.189,
+    "variacao_2024_2025_calculada": -0.02173608410456873,
+    "perfil_predominante": "Granel Líquido e Gasoso",
+    "participacao_do_perfil": 0.606293112962125
+   },
+   {
+    "posicao": 7,
+    "porto": "Vila do Conde",
+    "uf": "PA",
+    "toneladas_2025": 21313048.5049981,
+    "toneladas_2024": 20162500.0099999,
+    "variacao_2024_2025_calculada": 0.057063781496717425,
+    "perfil_predominante": "Granel Sólido",
+    "participacao_do_perfil": 0.7322525051420407
+   },
+   {
+    "posicao": 8,
+    "porto": "Santarém",
+    "uf": "PA",
+    "toneladas_2025": 18547009.518,
+    "toneladas_2024": 16378266.958,
+    "variacao_2024_2025_calculada": 0.13241587559669554,
+    "perfil_predominante": "Granel Sólido",
+    "participacao_do_perfil": 0.9700466183262137
+   },
+   {
+    "posicao": 9,
+    "porto": "São Francisco do Sul",
+    "uf": "SC",
+    "toneladas_2025": 17540880.902,
+    "toneladas_2024": 16960975.172,
+    "variacao_2024_2025_calculada": 0.03419058893248872,
+    "perfil_predominante": "Granel Sólido",
+    "participacao_do_perfil": 0.7063459725439051
+   },
+   {
+    "posicao": 10,
+    "porto": "Rio de Janeiro",
+    "uf": "RJ",
+    "toneladas_2025": 16905773.2520001,
+    "toneladas_2024": 15585734.232,
+    "variacao_2024_2025_calculada": 0.08469533743812008,
+    "perfil_predominante": "Carga Conteinerizada",
+    "participacao_do_perfil": 0.6860418736911617
+   }
+  ],
+  "criterio_classificacao": "porto organizado = os 35 da LISTA GERAL (administracao_portuaria) casados com o nome no EA; os 33 que existem no EA somam 496121218.081987 t em 2025, igual ao total \"Porto Organizado\" do quadro Tipo de Instalação (496.121.218,08 t).",
+  "ressalvas": [
+   "O número de um porto organizado agrega todos os terminais públicos/arrendados dentro dele; TUPs vizinhos (ex.: DP World Santos, TIPLAM) são contados à parte."
+  ]
+ },
+ "ranking_tups_2025": {
+  "fonte": {
+   "painel": "estatistico_aquaviario",
+   "quadro": "Movimentação Portuária — Instalação Portuária (toneladas) + Movimentação Portuária — Instalação × Perfil × Mercadoria (perfil predominante; quadro derivado pelo servidor)"
+  },
+  "atualizado_em": "2026-11-16T13:23:37.587622Z",
+  "medida": "Peso Carga Bruta (t)",
+  "linhas": [
+   {
+    "posicao": 1,
+    "terminal": "Terminal Marítimo de Ponta da Madeira",
+    "uf": "MA",
+    "municipio": "São Luís",
+    "tipo_cadastro": "Terminal de uso privado",
+    "toneladas_2025": 172389190,
+    "toneladas_2024": 175777452.998,
+    "variacao_2024_2025_calculada": -0.019275868094632997,
+    "perfil_predominante": "Granel Sólido",
+    "participacao_do_perfil": 1.0
+   },
+   {
+    "posicao": 2,
+    "terminal": "Terminal de Tubarão",
+    "uf": "ES",
+    "municipio": "Vitória",
+    "tipo_cadastro": "Terminal de uso privado",
+    "toneladas_2025": 87407354.811,
+    "toneladas_2024": 77421174.588,
+    "variacao_2024_2025_calculada": 0.1289851294060298,
+    "perfil_predominante": "Granel Sólido",
+    "participacao_do_perfil": 0.9913973775933856
+   },
+   {
+    "posicao": 3,
+    "terminal": "Terminal Aquaviário de Angra dos Reis",
+    "uf": "RJ",
+    "municipio": "Angra dos Reis",
+    "tipo_cadastro": "Terminal de uso privado",
+    "toneladas_2025": 70423240.277,
+    "toneladas_2024": 62721203.24,
+    "variacao_2024_2025_calculada": 0.12279797961669314,
+    "perfil_predominante": "Granel Líquido e Gasoso",
+    "participacao_do_perfil": 0.9980358978164603
+   },
+   {
+    "posicao": 4,
+    "terminal": "Terminal de Petróleo TPET/TOIL - Açu",
+    "uf": "RJ",
+    "municipio": "São João da Barra",
+    "tipo_cadastro": "Terminal de uso privado",
+    "toneladas_2025": 60439366.942,
+    "toneladas_2024": 50237443.679,
+    "variacao_2024_2025_calculada": 0.2030740920693892,
+    "perfil_predominante": "Granel Líquido e Gasoso",
+    "participacao_do_perfil": 1.0
+   },
+   {
+    "posicao": 5,
+    "terminal": "Terminal Aquaviário de São Sebastião (Almirante Barroso)",
+    "uf": "SP",
+    "municipio": "São Sebastião",
+    "tipo_cadastro": "Terminal de uso privado",
+    "toneladas_2025": 54053614.927,
+    "toneladas_2024": 53307534.734,
+    "variacao_2024_2025_calculada": 0.013995773706716674,
+    "perfil_predominante": "Granel Líquido e Gasoso",
+    "participacao_do_perfil": 1.0
+   },
+   {
+    "posicao": 6,
+    "terminal": "Terminal da Ilha Guaíba - TIG",
+    "uf": "RJ",
+    "municipio": "Mangaratiba",
+    "tipo_cadastro": "Terminal de uso privado",
+    "toneladas_2025": 31460694.996,
+    "toneladas_2024": 32133788,
+    "variacao_2024_2025_calculada": -0.020946581336753756,
+    "perfil_predominante": "Granel Sólido",
+    "participacao_do_perfil": 1.0
+   },
+   {
+    "posicao": 7,
+    "terminal": "Porto Sudeste do Brasil S/A",
+    "uf": "RJ",
+    "municipio": "Itaguaí",
+    "tipo_cadastro": "Terminal de uso privado",
+    "toneladas_2025": 30594397.753,
+    "toneladas_2024": 24719163.79,
+    "variacao_2024_2025_calculada": 0.23767931686171329,
+    "perfil_predominante": "Granel Sólido",
+    "participacao_do_perfil": 0.9099434502602741
+   },
+   {
+    "posicao": 8,
+    "terminal": "Porto do Açu - Terminal de Minério",
+    "uf": "RJ",
+    "municipio": "São João da Barra",
+    "tipo_cadastro": "Terminal de uso privado",
+    "toneladas_2025": 24248712,
+    "toneladas_2024": 25014985,
+    "variacao_2024_2025_calculada": -0.030632558844228774,
+    "perfil_predominante": "Granel Sólido",
+    "participacao_do_perfil": 1.0
+   },
+   {
+    "posicao": 9,
+    "terminal": "Terminal Portuário do Pecém",
+    "uf": "CE",
+    "municipio": "São Gonçalo do Amarante",
+    "tipo_cadastro": "Terminal de uso privado",
+    "toneladas_2025": 20515855.9109999,
+    "toneladas_2024": 19042334.075,
+    "variacao_2024_2025_calculada": 0.07738136670621887,
+    "perfil_predominante": "Granel Sólido",
+    "participacao_do_perfil": 0.4195933260276248
+   },
+   {
+    "posicao": 10,
+    "terminal": "Terminal Aquaviário de Madre de Deus",
+    "uf": "BA",
+    "municipio": "Madre de Deus",
+    "tipo_cadastro": "Terminal de uso privado",
+    "toneladas_2025": 20159705.187,
+    "toneladas_2024": 20806845.75,
+    "variacao_2024_2025_calculada": -0.031102290600678928,
+    "perfil_predominante": "Granel Líquido e Gasoso",
+    "participacao_do_perfil": 1.0
+   },
+   {
+    "posicao": 11,
+    "terminal": "Terminal Marítimo Ponta Ubu",
+    "uf": "ES",
+    "municipio": "Anchieta",
+    "tipo_cadastro": "Terminal de uso privado",
+    "toneladas_2025": 16517578.853,
+    "toneladas_2024": 9830558.926,
+    "variacao_2024_2025_calculada": 0.6802278463856286,
+    "perfil_predominante": "Granel Sólido",
+    "participacao_do_perfil": 0.9998469234491022
+   },
+   {
+    "posicao": 12,
+    "terminal": "DP World Santos",
+    "uf": "SP",
+    "municipio": "Santos",
+    "tipo_cadastro": "Terminal de uso privado",
+    "toneladas_2025": 16468988.95,
+    "toneladas_2024": 15389458.04,
+    "variacao_2024_2025_calculada": 0.07014742866149692,
+    "perfil_predominante": "Carga Conteinerizada",
+    "participacao_do_perfil": 0.6961707215183963
+   },
+   {
+    "posicao": 13,
+    "terminal": "Porto Itapoá Terminais Portuários",
+    "uf": "SC",
+    "municipio": "Itapoá",
+    "tipo_cadastro": "Terminal de uso privado",
+    "toneladas_2025": 16158506.8390001,
+    "toneladas_2024": 13606084.812,
+    "variacao_2024_2025_calculada": 0.1875941582216929,
+    "perfil_predominante": "Carga Conteinerizada",
+    "participacao_do_perfil": 1.0
+   },
+   {
+    "posicao": 14,
+    "terminal": "Terminal Aquaviário da Ilha D'Água",
+    "uf": "RJ",
+    "municipio": "Rio de Janeiro",
+    "tipo_cadastro": "Terminal de uso privado",
+    "toneladas_2025": 15904664.722,
+    "toneladas_2024": 15786396.825,
+    "variacao_2024_2025_calculada": 0.007491760045756912,
+    "perfil_predominante": "Granel Líquido e Gasoso",
+    "participacao_do_perfil": 1.0
+   },
+   {
+    "posicao": 15,
+    "terminal": "Terminal Portuário Privativo da Alumar",
+    "uf": "MA",
+    "municipio": "São Luís",
+    "tipo_cadastro": "Terminal de uso privado",
+    "toneladas_2025": 14545152.722,
+    "toneladas_2024": 14274234.869,
+    "variacao_2024_2025_calculada": 0.018979500861959542,
+    "perfil_predominante": "Granel Sólido",
+    "participacao_do_perfil": 0.9155628856930197
+   }
+  ],
+  "criterio_classificacao": "terminal autorizado = toda instalação do EA fora dos 33 portos organizados presentes no painel; tipo/município do cadastro instalacoes_privadas (Detalhamento dos terminais), casado por nome exato. Os 15 são todos \"Terminal de uso privado\" no cadastro.",
+  "ressalvas": [
+   "Ponta da Madeira (Vale, São Luís) é a maior instalação do país em 2025, acima do Porto de Santos.",
+   "Vários terminais são da Transpetro (Angra dos Reis/TEBIG, São Sebastião/TEBAR, Madre de Deus, Ilha D'Água) e movimentam petróleo, inclusive alívio de plataformas.",
+   "Perfil predominante vem do quadro derivado Instalação × Perfil × Mercadoria (o painel não publica esse cruzamento; o servidor confere que ele fecha com os quadros publicados)."
+  ]
+ },
+ "mapa": {
+  "fonte": {
+   "pontos": "administracao_portuaria / LISTA GERAL (35 portos organizados: nome, autoridade, município, UF); instalacoes_privadas / Detalhamento dos terminais (tipo, município, código)",
+   "toneladas_e_perfil": "Movimentação Portuária — Instalação Portuária (toneladas) + Movimentação Portuária — Instalação × Perfil × Mercadoria (perfil predominante; quadro derivado pelo servidor) — painel estatistico_aquaviario"
+  },
+  "atualizado_em": {
+   "estatistico_aquaviario": "2026-11-16T13:23:37.587622Z",
+   "administracao_portuaria": "2026-11-16T13:04:46.684060Z",
+   "instalacoes_privadas": "2026-11-16T13:00:49.538912Z"
+  },
+  "n_pontos": 60,
+  "n_portos_organizados": 35,
+  "n_tups": 25,
+  "pontos": [
+   {
+    "nome": "Angra dos Reis",
+    "tipo": "porto_organizado",
+    "municipio": "Angra",
+    "uf": "RJ",
+    "lat": -23.008,
+    "lon": -44.317,
+    "toneladas_2025": 288662.48,
+    "perfil_predominante": "Carga Geral",
+    "participacao_do_perfil": 0.7456265428052861,
+    "perfis_2025": {
+     "Carga Geral": 215234.407,
+     "Granel Sólido": 73428.07299999999
+    },
+    "autoridade_portuaria": "CDRJ",
+    "exploracao": "Estatal Federal",
+    "nome_no_estatistico_aquaviario": "Angra dos Reis",
+    "coord_fonte": "aproximada",
+    "municipio_nota": "a fonte grava \"Angra\"; município Angra dos Reis"
+   },
+   {
+    "nome": "Antonina",
+    "tipo": "porto_organizado",
+    "municipio": "Antonina",
+    "uf": "PR",
+    "lat": -25.445,
+    "lon": -48.69,
+    "toneladas_2025": 1338273.825,
+    "perfil_predominante": "Granel Sólido",
+    "participacao_do_perfil": 0.9637873997871849,
+    "perfis_2025": {
+     "Granel Sólido": 1289811.4500000002,
+     "Carga Geral": 48462.375
+    },
+    "autoridade_portuaria": "APPA",
+    "exploracao": "Convênio de Delegação",
+    "nome_no_estatistico_aquaviario": "Antonina",
+    "coord_fonte": "aproximada"
+   },
+   {
+    "nome": "Aratu",
+    "tipo": "porto_organizado",
+    "municipio": "Aratu",
+    "uf": "BA",
+    "lat": -12.788,
+    "lon": -38.498,
+    "toneladas_2025": 5819866.841,
+    "perfil_predominante": "Granel Líquido e Gasoso",
+    "participacao_do_perfil": 0.7025927323961604,
+    "perfis_2025": {
+     "Granel Líquido e Gasoso": 4088996.146000001,
+     "Granel Sólido": 1730447.2049999998,
+     "Carga Geral": 423.49
+    },
+    "autoridade_portuaria": "CODEBA",
+    "exploracao": "Estatal Federal",
+    "nome_no_estatistico_aquaviario": "Aratu",
+    "coord_fonte": "aproximada",
+    "municipio_nota": "a fonte grava \"Aratu\"; o porto fica em Candeias (BA)"
+   },
+   {
+    "nome": "Areia Branca",
+    "tipo": "porto_organizado",
+    "municipio": "Areia Branca",
+    "uf": "RN",
+    "lat": -4.82,
+    "lon": -37.04,
+    "toneladas_2025": 3384600.138,
+    "perfil_predominante": "Granel Sólido",
+    "participacao_do_perfil": 0.9938342678162474,
+    "perfis_2025": {
+     "Granel Sólido": 3363731.5999999987,
+     "Carga Geral": 20868.538
+    },
+    "autoridade_portuaria": "CODERN",
+    "exploracao": "Estatal Federal",
+    "nome_no_estatistico_aquaviario": "Areia Branca",
+    "coord_fonte": "aproximada"
+   },
+   {
+    "nome": "Barra do Riacho",
+    "tipo": "porto_organizado",
+    "municipio": "Aracruz",
+    "uf": "ES",
+    "lat": -19.838,
+    "lon": -40.056,
+    "toneladas_2025": null,
+    "perfil_predominante": null,
+    "participacao_do_perfil": null,
+    "perfis_2025": null,
+    "autoridade_portuaria": "CODESA",
+    "exploracao": "Concessão",
+    "nome_no_estatistico_aquaviario": null,
+    "coord_fonte": "aproximada",
+    "obs": "sem linha no Estatístico Aquaviário 2025 (nem em 2021-2026 pela busca no quadro de instalação)"
+   },
+   {
+    "nome": "Belém",
+    "tipo": "porto_organizado",
+    "municipio": "Belém",
+    "uf": "PA",
+    "lat": -1.445,
+    "lon": -48.495,
+    "toneladas_2025": 2828938.812,
+    "perfil_predominante": "Granel Líquido e Gasoso",
+    "participacao_do_perfil": 0.7333088570881399,
+    "perfis_2025": {
+     "Granel Líquido e Gasoso": 2074485.8870000006,
+     "Granel Sólido": 750618.7949999999,
+     "Carga Geral": 3834.13
+    },
+    "autoridade_portuaria": "CDP",
+    "exploracao": "Estatal Federal",
+    "nome_no_estatistico_aquaviario": "Belém",
+    "coord_fonte": "aproximada"
+   },
+   {
+    "nome": "Cabedelo",
+    "tipo": "porto_organizado",
+    "municipio": "João Pessoa",
+    "uf": "PB",
+    "lat": -6.97,
+    "lon": -34.838,
+    "toneladas_2025": 1185077.748,
+    "perfil_predominante": "Granel Líquido e Gasoso",
+    "participacao_do_perfil": 0.5020581324762162,
+    "perfis_2025": {
+     "Granel Líquido e Gasoso": 594977.9210000001,
+     "Granel Sólido": 589468.3269999999,
+     "Carga Geral": 631.5
+    },
+    "autoridade_portuaria": "DOCAS-PB",
+    "exploracao": "Convênio de Delegação",
+    "nome_no_estatistico_aquaviario": "Cabedelo",
+    "coord_fonte": "aproximada",
+    "municipio_nota": "a fonte grava \"João Pessoa\"; o porto fica no município de Cabedelo (PB)"
+   },
+   {
+    "nome": "Forno",
+    "tipo": "porto_organizado",
+    "municipio": "Arraial do Cabo",
+    "uf": "RJ",
+    "lat": -22.97,
+    "lon": -42.015,
+    "toneladas_2025": 0,
+    "perfil_predominante": null,
+    "participacao_do_perfil": null,
+    "perfis_2025": null,
+    "autoridade_portuaria": "COMAP",
+    "exploracao": "Convênio de Delegação",
+    "nome_no_estatistico_aquaviario": "Porto Engenheiro Zephyrino Lavanère Machado Filho",
+    "coord_fonte": "aproximada",
+    "obs": "o EA publica a linha com 0 t em 2025 (também 0 em 2024)"
+   },
+   {
+    "nome": "Fortaleza",
+    "tipo": "porto_organizado",
+    "municipio": "Fortaleza",
+    "uf": "CE",
+    "lat": -3.713,
+    "lon": -38.48,
+    "toneladas_2025": 4832763.882,
+    "perfil_predominante": "Granel Líquido e Gasoso",
+    "participacao_do_perfil": 0.5160768522727506,
+    "perfis_2025": {
+     "Granel Líquido e Gasoso": 2494077.571999999,
+     "Granel Sólido": 1763868.8329999999,
+     "Carga Conteinerizada": 551920.618000002,
+     "Carga Geral": 22896.859
+    },
+    "autoridade_portuaria": "CDC",
+    "exploracao": "Estatal Federal",
+    "nome_no_estatistico_aquaviario": "Fortaleza",
+    "coord_fonte": "aproximada"
+   },
+   {
+    "nome": "Ilhéus",
+    "tipo": "porto_organizado",
+    "municipio": "Ilhéus",
+    "uf": "BA",
+    "lat": -14.782,
+    "lon": -39.026,
+    "toneladas_2025": 215722.262,
+    "perfil_predominante": "Granel Sólido",
+    "participacao_do_perfil": 0.7902503451405493,
+    "perfis_2025": {
+     "Granel Sólido": 170474.592,
+     "Carga Geral": 45247.670000000006
+    },
+    "autoridade_portuaria": "CODEBA",
+    "exploracao": "Estatal Federal",
+    "nome_no_estatistico_aquaviario": "Ilhéus",
+    "coord_fonte": "aproximada"
+   },
+   {
+    "nome": "Imbituba",
+    "tipo": "porto_organizado",
+    "municipio": "Imbituba",
+    "uf": "SC",
+    "lat": -28.23,
+    "lon": -48.655,
+    "toneladas_2025": 7070444.501,
+    "perfil_predominante": "Granel Sólido",
+    "participacao_do_perfil": 0.7673485114313041,
+    "perfis_2025": {
+     "Granel Sólido": 5425495.063,
+     "Carga Conteinerizada": 1316374.26,
+     "Carga Geral": 290672.56999999995,
+     "Granel Líquido e Gasoso": 37902.608
+    },
+    "autoridade_portuaria": "SCPAR",
+    "exploracao": "Convênio de Delegação",
+    "nome_no_estatistico_aquaviario": "Imbituba",
+    "coord_fonte": "aproximada"
+   },
+   {
+    "nome": "Itaguaí",
+    "tipo": "porto_organizado",
+    "municipio": "Itaguaí",
+    "uf": "RJ",
+    "lat": -22.925,
+    "lon": -43.835,
+    "toneladas_2025": 62899609.347,
+    "perfil_predominante": "Granel Sólido",
+    "participacao_do_perfil": 0.9579137092029291,
+    "perfis_2025": {
+     "Granel Sólido": 60252398.097,
+     "Carga Conteinerizada": 1806085.9390000016,
+     "Carga Geral": 841125.3109999999
+    },
+    "autoridade_portuaria": "CDRJ",
+    "exploracao": "Estatal Federal",
+    "nome_no_estatistico_aquaviario": "Itaguaí",
+    "coord_fonte": "aproximada"
+   },
+   {
+    "nome": "Itajaí",
+    "tipo": "porto_organizado",
+    "municipio": "Itajaí",
+    "uf": "SC",
+    "lat": -26.903,
+    "lon": -48.66,
+    "toneladas_2025": 4350051.93799986,
+    "perfil_predominante": "Carga Conteinerizada",
+    "participacao_do_perfil": 0.8878074579439656,
+    "perfis_2025": {
+     "Carga Conteinerizada": 3862008.5530000003,
+     "Carga Geral": 488043.38499999925
+    },
+    "autoridade_portuaria": "SPI",
+    "exploracao": "Convênio de Delegação",
+    "nome_no_estatistico_aquaviario": "Itajaí",
+    "coord_fonte": "aproximada"
+   },
+   {
+    "nome": "Itaqui",
+    "tipo": "porto_organizado",
+    "municipio": "São Luís",
+    "uf": "MA",
+    "lat": -2.57,
+    "lon": -44.365,
+    "toneladas_2025": 36771879.977,
+    "perfil_predominante": "Granel Sólido",
+    "participacao_do_perfil": 0.704657475119769,
+    "perfis_2025": {
+     "Granel Sólido": 25911580.100000005,
+     "Granel Líquido e Gasoso": 9063469.058999995,
+     "Carga Geral": 1796572.596,
+     "Carga Conteinerizada": 258.222
+    },
+    "autoridade_portuaria": "EMAP",
+    "exploracao": "Convênio de Delegação",
+    "nome_no_estatistico_aquaviario": "Itaqui",
+    "coord_fonte": "aproximada"
+   },
+   {
+    "nome": "Laguna",
+    "tipo": "porto_organizado",
+    "municipio": "Laguna",
+    "uf": "SC",
+    "lat": -28.495,
+    "lon": -48.78,
+    "toneladas_2025": null,
+    "perfil_predominante": null,
+    "participacao_do_perfil": null,
+    "perfis_2025": null,
+    "autoridade_portuaria": "SCPAR",
+    "exploracao": "Convênio de Delegação",
+    "nome_no_estatistico_aquaviario": null,
+    "coord_fonte": "aproximada",
+    "obs": "sem linha no Estatístico Aquaviário 2025 (nem em 2021-2026 pela busca no quadro de instalação)"
+   },
+   {
+    "nome": "Maceió",
+    "tipo": "porto_organizado",
+    "municipio": "Maceió",
+    "uf": "AL",
+    "lat": -9.68,
+    "lon": -35.728,
+    "toneladas_2025": 2510841.259,
+    "perfil_predominante": "Granel Sólido",
+    "participacao_do_perfil": 0.7851469713322884,
+    "perfis_2025": {
+     "Granel Sólido": 1971379.41,
+     "Granel Líquido e Gasoso": 539192.059,
+     "Carga Geral": 269.79
+    },
+    "autoridade_portuaria": "CODERN",
+    "exploracao": "Estatal Federal",
+    "nome_no_estatistico_aquaviario": "Maceió",
+    "coord_fonte": "aproximada"
+   },
+   {
+    "nome": "Manaus",
+    "tipo": "porto_organizado",
+    "municipio": "Manaus",
+    "uf": "AM",
+    "lat": -3.139,
+    "lon": -60.027,
+    "toneladas_2025": 0,
+    "perfil_predominante": null,
+    "participacao_do_perfil": null,
+    "perfis_2025": null,
+    "autoridade_portuaria": "SNPH",
+    "exploracao": "Convênio de Delegação",
+    "nome_no_estatistico_aquaviario": "Manaus",
+    "coord_fonte": "aproximada",
+    "obs": "o EA publica a linha com 0 t em 2025 (também 0 em 2024)"
+   },
+   {
+    "nome": "Natal",
+    "tipo": "porto_organizado",
+    "municipio": "Natal",
+    "uf": "RN",
+    "lat": -5.777,
+    "lon": -35.206,
+    "toneladas_2025": 494963.458000004,
+    "perfil_predominante": "Granel Sólido",
+    "participacao_do_perfil": 0.5020731853703848,
+    "perfis_2025": {
+     "Granel Sólido": 248507.88000000003,
+     "Carga Geral": 174543.19099999996,
+     "Carga Conteinerizada": 71912.38699999868
+    },
+    "autoridade_portuaria": "CODERN",
+    "exploracao": "Estatal Federal",
+    "nome_no_estatistico_aquaviario": "Natal",
+    "coord_fonte": "aproximada"
+   },
+   {
+    "nome": "Niterói",
+    "tipo": "porto_organizado",
+    "municipio": "Niterói",
+    "uf": "RJ",
+    "lat": -22.885,
+    "lon": -43.12,
+    "toneladas_2025": 168573.104,
+    "perfil_predominante": "Carga Geral",
+    "participacao_do_perfil": 0.9973819073771104,
+    "perfis_2025": {
+     "Carga Geral": 168131.76400000008,
+     "Granel Líquido e Gasoso": 441.34
+    },
+    "autoridade_portuaria": "CDRJ",
+    "exploracao": "Estatal Federal",
+    "nome_no_estatistico_aquaviario": "Niterói",
+    "coord_fonte": "aproximada"
+   },
+   {
+    "nome": "Paranaguá",
+    "tipo": "porto_organizado",
+    "municipio": "Paranaguá",
+    "uf": "PR",
+    "lat": -25.502,
+    "lon": -48.525,
+    "toneladas_2025": 65235546.4390001,
+    "perfil_predominante": "Granel Sólido",
+    "participacao_do_perfil": 0.6665681590428729,
+    "perfis_2025": {
+     "Granel Sólido": 43483938.094000004,
+     "Carga Conteinerizada": 15259234.924999898,
+     "Granel Líquido e Gasoso": 4662098.194999999,
+     "Carga Geral": 1830275.225
+    },
+    "autoridade_portuaria": "APPA",
+    "exploracao": "Convênio de Delegação",
+    "nome_no_estatistico_aquaviario": "Paranaguá",
+    "coord_fonte": "aproximada"
+   },
+   {
+    "nome": "Pelotas",
+    "tipo": "porto_organizado",
+    "municipio": "Pelotas",
+    "uf": "RS",
+    "lat": -31.779,
+    "lon": -52.33,
+    "toneladas_2025": 1076417.546,
+    "perfil_predominante": "Carga Geral",
+    "participacao_do_perfil": 0.9838107562769142,
+    "perfis_2025": {
+     "Carga Geral": 1058991.1600000006,
+     "Granel Sólido": 17426.386
+    },
+    "autoridade_portuaria": "PORTOS RS",
+    "exploracao": "Convênio de Delegação",
+    "nome_no_estatistico_aquaviario": "Pelotas",
+    "coord_fonte": "aproximada"
+   },
+   {
+    "nome": "Porto Alegre",
+    "tipo": "porto_organizado",
+    "municipio": "Porto Alegre",
+    "uf": "RS",
+    "lat": -30.023,
+    "lon": -51.22,
+    "toneladas_2025": 320802.586,
+    "perfil_predominante": "Granel Sólido",
+    "participacao_do_perfil": 0.9983026944801499,
+    "perfis_2025": {
+     "Granel Sólido": 320258.086,
+     "Carga Geral": 544.5
+    },
+    "autoridade_portuaria": "PORTOS RS",
+    "exploracao": "Convênio de Delegação",
+    "nome_no_estatistico_aquaviario": "Porto Alegre",
+    "coord_fonte": "aproximada"
+   },
+   {
+    "nome": "Porto Velho",
+    "tipo": "porto_organizado",
+    "municipio": "Porto Velho",
+    "uf": "RO",
+    "lat": -8.755,
+    "lon": -63.91,
+    "toneladas_2025": 2012909.31,
+    "perfil_predominante": "Granel Sólido",
+    "participacao_do_perfil": 0.9188135887751446,
+    "perfis_2025": {
+     "Granel Sólido": 1849488.427,
+     "Carga Geral": 139614.55999999997,
+     "Carga Conteinerizada": 23204.21000000002,
+     "Granel Líquido e Gasoso": 602.113
+    },
+    "autoridade_portuaria": "SOPH-RO",
+    "exploracao": "Convênio de Delegação",
+    "nome_no_estatistico_aquaviario": "Porto Velho",
+    "coord_fonte": "aproximada"
+   },
+   {
+    "nome": "Recife",
+    "tipo": "porto_organizado",
+    "municipio": "Recife",
+    "uf": "PE",
+    "lat": -8.056,
+    "lon": -34.87,
+    "toneladas_2025": 1570686.136,
+    "perfil_predominante": "Granel Sólido",
+    "participacao_do_perfil": 0.6950505641949589,
+    "perfis_2025": {
+     "Granel Sólido": 1091706.285,
+     "Carga Geral": 462429.053,
+     "Granel Líquido e Gasoso": 16550.798
+    },
+    "autoridade_portuaria": "PORTO DO RECIFE S.A.",
+    "exploracao": "Convênio de Delegação",
+    "nome_no_estatistico_aquaviario": "Recife",
+    "coord_fonte": "aproximada"
+   },
+   {
+    "nome": "Rio de Janeiro",
+    "tipo": "porto_organizado",
+    "municipio": "Rio de Janeiro",
+    "uf": "RJ",
+    "lat": -22.89,
+    "lon": -43.2,
+    "toneladas_2025": 16905773.2520001,
+    "perfil_predominante": "Carga Conteinerizada",
+    "participacao_do_perfil": 0.6860418736911617,
+    "perfis_2025": {
+     "Carga Conteinerizada": 11598068.358000003,
+     "Granel Sólido": 2615300.432,
+     "Granel Líquido e Gasoso": 1501873.728,
+     "Carga Geral": 1190530.7339999992
+    },
+    "autoridade_portuaria": "CDRJ",
+    "exploracao": "Estatal Federal",
+    "nome_no_estatistico_aquaviario": "Rio de Janeiro",
+    "coord_fonte": "aproximada"
+   },
+   {
+    "nome": "Rio Grande",
+    "tipo": "porto_organizado",
+    "municipio": "Rio Grande",
+    "uf": "RS",
+    "lat": -32.06,
+    "lon": -52.09,
+    "toneladas_2025": 31634709.184,
+    "perfil_predominante": "Granel Sólido",
+    "participacao_do_perfil": 0.46426751570797703,
+    "perfis_2025": {
+     "Granel Sólido": 14686967.843000002,
+     "Carga Conteinerizada": 10171339.32799999,
+     "Carga Geral": 4306970.602000001,
+     "Granel Líquido e Gasoso": 2469431.411
+    },
+    "autoridade_portuaria": "PORTOS RS",
+    "exploracao": "Convênio de Delegação",
+    "nome_no_estatistico_aquaviario": "Rio Grande",
+    "coord_fonte": "aproximada"
+   },
+   {
+    "nome": "Salvador",
+    "tipo": "porto_organizado",
+    "municipio": "Salvador",
+    "uf": "BA",
+    "lat": -12.965,
+    "lon": -38.515,
+    "toneladas_2025": 6260288.82900002,
+    "perfil_predominante": "Carga Conteinerizada",
+    "participacao_do_perfil": 0.8151070326598827,
+    "perfis_2025": {
+     "Carga Conteinerizada": 5102805.451000007,
+     "Granel Sólido": 1067468.082,
+     "Carga Geral": 90015.296
+    },
+    "autoridade_portuaria": "CODEBA",
+    "exploracao": "Estatal Federal",
+    "nome_no_estatistico_aquaviario": "Salvador",
+    "coord_fonte": "aproximada"
+   },
+   {
+    "nome": "Santana",
+    "tipo": "porto_organizado",
+    "municipio": "Santana",
+    "uf": "AP",
+    "lat": -0.06,
+    "lon": -51.175,
+    "toneladas_2025": 3585591.179,
+    "perfil_predominante": "Granel Sólido",
+    "participacao_do_perfil": 0.9971347514295076,
+    "perfis_2025": {
+     "Granel Sólido": 3575317.569,
+     "Carga Geral": 10273.61
+    },
+    "autoridade_portuaria": "CDSA",
+    "exploracao": "Convênio de Delegação",
+    "nome_no_estatistico_aquaviario": "Santana",
+    "coord_fonte": "aproximada"
+   },
+   {
+    "nome": "Santarém",
+    "tipo": "porto_organizado",
+    "municipio": "Santarém",
+    "uf": "PA",
+    "lat": -2.42,
+    "lon": -54.745,
+    "toneladas_2025": 18547009.518,
+    "perfil_predominante": "Granel Sólido",
+    "participacao_do_perfil": 0.9700466183262137,
+    "perfis_2025": {
+     "Granel Sólido": 17991463.862999998,
+     "Granel Líquido e Gasoso": 469577.792,
+     "Carga Geral": 83153.163,
+     "Carga Conteinerizada": 2814.7000000000003
+    },
+    "autoridade_portuaria": "CDP",
+    "exploracao": "Estatal Federal",
+    "nome_no_estatistico_aquaviario": "Santarém",
+    "coord_fonte": "aproximada"
+   },
+   {
+    "nome": "Santos",
+    "tipo": "porto_organizado",
+    "municipio": "Santos",
+    "uf": "SP",
+    "lat": -23.96,
+    "lon": -46.31,
+    "toneladas_2025": 142819073.037989,
+    "perfil_predominante": "Granel Sólido",
+    "participacao_do_perfil": 0.544391192192563,
+    "perfis_2025": {
+     "Granel Sólido": 77749445.43900001,
+     "Carga Conteinerizada": 44906966.80601183,
+     "Granel Líquido e Gasoso": 14702222.216000002,
+     "Carga Geral": 5460438.576999999
+    },
+    "autoridade_portuaria": "SPA",
+    "exploracao": "Estatal Federal",
+    "nome_no_estatistico_aquaviario": "Santos",
+    "coord_fonte": "aproximada"
+   },
+   {
+    "nome": "São Francisco do Sul",
+    "tipo": "porto_organizado",
+    "municipio": "São Francisco do Sul",
+    "uf": "SC",
+    "lat": -26.24,
+    "lon": -48.64,
+    "toneladas_2025": 17540880.902,
+    "perfil_predominante": "Granel Sólido",
+    "participacao_do_perfil": 0.7063459725439051,
+    "perfis_2025": {
+     "Granel Sólido": 12389930.579999998,
+     "Carga Geral": 5095513.229999998,
+     "Granel Líquido e Gasoso": 55437.092000000004
+    },
+    "autoridade_portuaria": "SCPAR",
+    "exploracao": "Convênio de Delegação",
+    "nome_no_estatistico_aquaviario": "São Francisco do Sul",
+    "coord_fonte": "aproximada"
+   },
+   {
+    "nome": "São Sebastião",
+    "tipo": "porto_organizado",
+    "municipio": "São Sebastião",
+    "uf": "SP",
+    "lat": -23.81,
+    "lon": -45.4,
+    "toneladas_2025": 1463174.77,
+    "perfil_predominante": "Granel Sólido",
+    "participacao_do_perfil": 0.9129364231724689,
+    "perfis_2025": {
+     "Granel Sólido": 1335785.541,
+     "Carga Geral": 127389.229
+    },
+    "autoridade_portuaria": "CDSS",
+    "exploracao": "Convênio de Delegação",
+    "nome_no_estatistico_aquaviario": "São Sebastião",
+    "coord_fonte": "aproximada"
+   },
+   {
+    "nome": "Suape",
+    "tipo": "porto_organizado",
+    "municipio": "Ipojuca",
+    "uf": "PE",
+    "lat": -8.395,
+    "lon": -34.96,
+    "toneladas_2025": 24253346.1449999,
+    "perfil_predominante": "Granel Líquido e Gasoso",
+    "participacao_do_perfil": 0.606293112962125,
+    "perfis_2025": {
+     "Granel Líquido e Gasoso": 14704636.734000001,
+     "Carga Conteinerizada": 7559515.061999995,
+     "Granel Sólido": 1325688.544,
+     "Carga Geral": 663505.805
+    },
+    "autoridade_portuaria": "SDEC-PE",
+    "exploracao": "Convênio de Delegação",
+    "nome_no_estatistico_aquaviario": "Suape",
+    "coord_fonte": "aproximada"
+   },
+   {
+    "nome": "Vila do Conde",
+    "tipo": "porto_organizado",
+    "municipio": "Barcarena",
+    "uf": "PA",
+    "lat": -1.545,
+    "lon": -48.75,
+    "toneladas_2025": 21313048.5049981,
+    "perfil_predominante": "Granel Sólido",
+    "participacao_do_perfil": 0.7322525051420407,
+    "perfis_2025": {
+     "Granel Sólido": 15606533.16,
+     "Granel Líquido e Gasoso": 2960575.932,
+     "Carga Conteinerizada": 1878080.9699998999,
+     "Carga Geral": 867858.443
+    },
+    "autoridade_portuaria": "CDP",
+    "exploracao": "Estatal Federal",
+    "nome_no_estatistico_aquaviario": "Vila do Conde",
+    "coord_fonte": "aproximada"
+   },
+   {
+    "nome": "Vitória",
+    "tipo": "porto_organizado",
+    "municipio": "Vitória",
+    "uf": "ES",
+    "lat": -20.32,
+    "lon": -40.335,
+    "toneladas_2025": 7421691.17099993,
+    "perfil_predominante": "Granel Sólido",
+    "participacao_do_perfil": 0.3892313536687849,
+    "perfis_2025": {
+     "Granel Sólido": 2888754.901,
+     "Carga Conteinerizada": 2714797.6830000007,
+     "Carga Geral": 918037.8199999998,
+     "Granel Líquido e Gasoso": 900100.7670000001
+    },
+    "autoridade_portuaria": "CODESA",
+    "exploracao": "Concessão",
+    "nome_no_estatistico_aquaviario": "Vitória",
+    "coord_fonte": "aproximada"
+   },
+   {
+    "nome": "Terminal Marítimo de Ponta da Madeira",
+    "tipo": "tup",
+    "municipio": "São Luís",
+    "uf": "MA",
+    "lat": -2.59,
+    "lon": -44.38,
+    "toneladas_2025": 172389190,
+    "perfil_predominante": "Granel Sólido",
+    "participacao_do_perfil": 1.0,
+    "perfis_2025": {
+     "Granel Sólido": 172389190.0
+    },
+    "tipo_cadastro": "Terminal de uso privado",
+    "codigo_cadastro": "BRMA002",
+    "coord_fonte": "aproximada"
+   },
+   {
+    "nome": "Terminal de Tubarão",
+    "tipo": "tup",
+    "municipio": "Vitória",
+    "uf": "ES",
+    "lat": -20.287,
+    "lon": -40.243,
+    "toneladas_2025": 87407354.811,
+    "perfil_predominante": "Granel Sólido",
+    "participacao_do_perfil": 0.9913973775933856,
+    "perfis_2025": {
+     "Granel Sólido": 86655422.342,
+     "Granel Líquido e Gasoso": 751932.4689999999
+    },
+    "tipo_cadastro": "Terminal de uso privado",
+    "codigo_cadastro": "BRES001",
+    "coord_fonte": "aproximada"
+   },
+   {
+    "nome": "Terminal Aquaviário de Angra dos Reis",
+    "tipo": "tup",
+    "municipio": "Angra dos Reis",
+    "uf": "RJ",
+    "lat": -23.048,
+    "lon": -44.23,
+    "toneladas_2025": 70423240.277,
+    "perfil_predominante": "Granel Líquido e Gasoso",
+    "participacao_do_perfil": 0.9980358978164603,
+    "perfis_2025": {
+     "Granel Líquido e Gasoso": 70284921.83699998,
+     "Granel Sólido": 138318.44
+    },
+    "tipo_cadastro": "Terminal de uso privado",
+    "codigo_cadastro": "BRRJ009",
+    "coord_fonte": "aproximada"
+   },
+   {
+    "nome": "Terminal de Petróleo TPET/TOIL - Açu",
+    "tipo": "tup",
+    "municipio": "São João da Barra",
+    "uf": "RJ",
+    "lat": -21.81,
+    "lon": -40.98,
+    "toneladas_2025": 60439366.942,
+    "perfil_predominante": "Granel Líquido e Gasoso",
+    "participacao_do_perfil": 1.0,
+    "perfis_2025": {
+     "Granel Líquido e Gasoso": 60439366.941999994
+    },
+    "tipo_cadastro": "Terminal de uso privado",
+    "codigo_cadastro": "BRRJ067",
+    "coord_fonte": "aproximada"
+   },
+   {
+    "nome": "Terminal Aquaviário de São Sebastião (Almirante Barroso)",
+    "tipo": "tup",
+    "municipio": "São Sebastião",
+    "uf": "SP",
+    "lat": -23.793,
+    "lon": -45.398,
+    "toneladas_2025": 54053614.927,
+    "perfil_predominante": "Granel Líquido e Gasoso",
+    "participacao_do_perfil": 1.0,
+    "perfis_2025": {
+     "Granel Líquido e Gasoso": 54053614.92700003
+    },
+    "tipo_cadastro": "Terminal de uso privado",
+    "codigo_cadastro": "BRSP006",
+    "coord_fonte": "aproximada"
+   },
+   {
+    "nome": "Terminal da Ilha Guaíba - TIG",
+    "tipo": "tup",
+    "municipio": "Mangaratiba",
+    "uf": "RJ",
+    "lat": -23.0,
+    "lon": -44.03,
+    "toneladas_2025": 31460694.996,
+    "perfil_predominante": "Granel Sólido",
+    "participacao_do_perfil": 1.0,
+    "perfis_2025": {
+     "Granel Sólido": 31460694.996
+    },
+    "tipo_cadastro": "Terminal de uso privado",
+    "codigo_cadastro": "BRRJ001",
+    "coord_fonte": "aproximada"
+   },
+   {
+    "nome": "Porto Sudeste do Brasil S/A",
+    "tipo": "tup",
+    "municipio": "Itaguaí",
+    "uf": "RJ",
+    "lat": -22.935,
+    "lon": -43.86,
+    "toneladas_2025": 30594397.753,
+    "perfil_predominante": "Granel Sólido",
+    "participacao_do_perfil": 0.9099434502602741,
+    "perfis_2025": {
+     "Granel Sólido": 27839171.85,
+     "Granel Líquido e Gasoso": 2755225.903
+    },
+    "tipo_cadastro": "Terminal de uso privado",
+    "codigo_cadastro": "BRRJ023",
+    "coord_fonte": "aproximada"
+   },
+   {
+    "nome": "Porto do Açu - Terminal de Minério",
+    "tipo": "tup",
+    "municipio": "São João da Barra",
+    "uf": "RJ",
+    "lat": -21.83,
+    "lon": -40.99,
+    "toneladas_2025": 24248712,
+    "perfil_predominante": "Granel Sólido",
+    "participacao_do_perfil": 1.0,
+    "perfis_2025": {
+     "Granel Sólido": 24248712.0
+    },
+    "tipo_cadastro": "Terminal de uso privado",
+    "codigo_cadastro": "BRRJ020",
+    "coord_fonte": "aproximada"
+   },
+   {
+    "nome": "Terminal Portuário do Pecém",
+    "tipo": "tup",
+    "municipio": "São Gonçalo do Amarante",
+    "uf": "CE",
+    "lat": -3.54,
+    "lon": -38.8,
+    "toneladas_2025": 20515855.9109999,
+    "perfil_predominante": "Granel Sólido",
+    "participacao_do_perfil": 0.4195933260276248,
+    "perfis_2025": {
+     "Granel Sólido": 8608316.218,
+     "Carga Conteinerizada": 8145934.25100001,
+     "Carga Geral": 3722888.906999999,
+     "Granel Líquido e Gasoso": 38716.534999999996
+    },
+    "tipo_cadastro": "Terminal de uso privado",
+    "codigo_cadastro": "BRCE001",
+    "coord_fonte": "aproximada"
+   },
+   {
+    "nome": "Terminal Aquaviário de Madre de Deus",
+    "tipo": "tup",
+    "municipio": "Madre de Deus",
+    "uf": "BA",
+    "lat": -12.745,
+    "lon": -38.62,
+    "toneladas_2025": 20159705.187,
+    "perfil_predominante": "Granel Líquido e Gasoso",
+    "participacao_do_perfil": 1.0,
+    "perfis_2025": {
+     "Granel Líquido e Gasoso": 20159705.187000003
+    },
+    "tipo_cadastro": "Terminal de uso privado",
+    "codigo_cadastro": "BRBA003",
+    "coord_fonte": "aproximada"
+   },
+   {
+    "nome": "Terminal Marítimo Ponta Ubu",
+    "tipo": "tup",
+    "municipio": "Anchieta",
+    "uf": "ES",
+    "lat": -20.785,
+    "lon": -40.575,
+    "toneladas_2025": 16517578.853,
+    "perfil_predominante": "Granel Sólido",
+    "participacao_do_perfil": 0.9998469234491022,
+    "perfis_2025": {
+     "Granel Sólido": 16515050.399,
+     "Carga Geral": 2528.4539999999997
+    },
+    "tipo_cadastro": "Terminal de uso privado",
+    "codigo_cadastro": "BRES002",
+    "coord_fonte": "aproximada"
+   },
+   {
+    "nome": "DP World Santos",
+    "tipo": "tup",
+    "municipio": "Santos",
+    "uf": "SP",
+    "lat": -23.917,
+    "lon": -46.355,
+    "toneladas_2025": 16468988.95,
+    "perfil_predominante": "Carga Conteinerizada",
+    "participacao_do_perfil": 0.6961707215183963,
+    "perfis_2025": {
+     "Carga Conteinerizada": 11465227.919999989,
+     "Carga Geral": 5003761.03
+    },
+    "tipo_cadastro": "Terminal de uso privado",
+    "codigo_cadastro": "BRSP008",
+    "coord_fonte": "aproximada"
+   },
+   {
+    "nome": "Porto Itapoá Terminais Portuários",
+    "tipo": "tup",
+    "municipio": "Itapoá",
+    "uf": "SC",
+    "lat": -26.18,
+    "lon": -48.6,
+    "toneladas_2025": 16158506.8390001,
+    "perfil_predominante": "Carga Conteinerizada",
+    "participacao_do_perfil": 1.0,
+    "perfis_2025": {
+     "Carga Conteinerizada": 16158506.839000043
+    },
+    "tipo_cadastro": "Terminal de uso privado",
+    "codigo_cadastro": "BRSC011",
+    "coord_fonte": "aproximada"
+   },
+   {
+    "nome": "Terminal Aquaviário da Ilha D'Água",
+    "tipo": "tup",
+    "municipio": "Rio de Janeiro",
+    "uf": "RJ",
+    "lat": -22.82,
+    "lon": -43.16,
+    "toneladas_2025": 15904664.722,
+    "perfil_predominante": "Granel Líquido e Gasoso",
+    "participacao_do_perfil": 1.0,
+    "perfis_2025": {
+     "Granel Líquido e Gasoso": 15904664.721999997
+    },
+    "tipo_cadastro": "Terminal de uso privado",
+    "codigo_cadastro": "BRRJ010",
+    "coord_fonte": "aproximada"
+   },
+   {
+    "nome": "Terminal Portuário Privativo da Alumar",
+    "tipo": "tup",
+    "municipio": "São Luís",
+    "uf": "MA",
+    "lat": -2.69,
+    "lon": -44.35,
+    "toneladas_2025": 14545152.722,
+    "perfil_predominante": "Granel Sólido",
+    "participacao_do_perfil": 0.9155628856930197,
+    "perfis_2025": {
+     "Granel Sólido": 13317001.999,
+     "Granel Líquido e Gasoso": 1227026.855,
+     "Carga Geral": 1123.868
+    },
+    "tipo_cadastro": "Terminal de uso privado",
+    "codigo_cadastro": "BRMA001",
+    "coord_fonte": "aproximada"
+   },
+   {
+    "nome": "Terminal Integrador Portuário Luiz Antonio Mesquita - TIPLAM",
+    "tipo": "tup",
+    "municipio": "Santos",
+    "uf": "SP",
+    "lat": -23.88,
+    "lon": -46.37,
+    "toneladas_2025": 14260228.931,
+    "perfil_predominante": "Granel Sólido",
+    "participacao_do_perfil": 0.9767717216460724,
+    "perfis_2025": {
+     "Granel Sólido": 13928988.364,
+     "Granel Líquido e Gasoso": 331240.567
+    },
+    "tipo_cadastro": "Terminal de uso privado",
+    "codigo_cadastro": "BRSP001",
+    "coord_fonte": "aproximada"
+   },
+   {
+    "nome": "Terminal Vila do Conde",
+    "tipo": "tup",
+    "municipio": "Barcarena",
+    "uf": "PA",
+    "lat": -1.547,
+    "lon": -48.756,
+    "toneladas_2025": 13158516.953,
+    "perfil_predominante": "Granel Sólido",
+    "participacao_do_perfil": 1.0,
+    "perfis_2025": {
+     "Granel Sólido": 13158516.952999998
+    },
+    "tipo_cadastro": "Terminal de uso privado",
+    "codigo_cadastro": "BRPA043",
+    "coord_fonte": "aproximada"
+   },
+   {
+    "nome": "Terminal Trombetas",
+    "tipo": "tup",
+    "municipio": "Oriximiná",
+    "uf": "PA",
+    "lat": -1.465,
+    "lon": -56.38,
+    "toneladas_2025": 12684231,
+    "perfil_predominante": "Granel Sólido",
+    "participacao_do_perfil": 1.0,
+    "perfis_2025": {
+     "Granel Sólido": 12684231.0
+    },
+    "tipo_cadastro": "Terminal de uso privado",
+    "codigo_cadastro": "BRPA001",
+    "coord_fonte": "aproximada"
+   },
+   {
+    "nome": "Terminal Graneleiro Hermasa",
+    "tipo": "tup",
+    "municipio": "Itacoatiara",
+    "uf": "AM",
+    "lat": -3.143,
+    "lon": -58.43,
+    "toneladas_2025": 12185490.839,
+    "perfil_predominante": "Granel Sólido",
+    "participacao_do_perfil": 0.9881580242514184,
+    "perfis_2025": {
+     "Granel Sólido": 12041190.552000001,
+     "Granel Líquido e Gasoso": 144300.28699999998
+    },
+    "tipo_cadastro": "Terminal de uso privado",
+    "codigo_cadastro": "BRAM014",
+    "coord_fonte": "aproximada"
+   },
+   {
+    "nome": "Terminal Aquaviário de Osório",
+    "tipo": "tup",
+    "municipio": "Osório",
+    "uf": "RS",
+    "lat": -29.98,
+    "lon": -50.13,
+    "toneladas_2025": 10706477.801,
+    "perfil_predominante": "Granel Líquido e Gasoso",
+    "participacao_do_perfil": 1.0,
+    "perfis_2025": {
+     "Granel Líquido e Gasoso": 10706477.800999997
+    },
+    "tipo_cadastro": "Terminal de uso privado",
+    "codigo_cadastro": "BRRS009",
+    "coord_fonte": "aproximada"
+   },
+   {
+    "nome": "Portonave - Terminais Portuários de Navegantes",
+    "tipo": "tup",
+    "municipio": "Navegantes",
+    "uf": "SC",
+    "lat": -26.896,
+    "lon": -48.664,
+    "toneladas_2025": 10494394.7039996,
+    "perfil_predominante": "Carga Conteinerizada",
+    "participacao_do_perfil": 1.0,
+    "perfis_2025": {
+     "Carga Conteinerizada": 10494394.703999197
+    },
+    "tipo_cadastro": "Terminal de uso privado",
+    "codigo_cadastro": "BRSC008",
+    "coord_fonte": "aproximada"
+   },
+   {
+    "nome": "Terminal Aquaviário de São Francisco do Sul",
+    "tipo": "tup",
+    "municipio": "São Francisco do Sul",
+    "uf": "SC",
+    "lat": -26.23,
+    "lon": -48.57,
+    "toneladas_2025": 10261272.628,
+    "perfil_predominante": "Granel Líquido e Gasoso",
+    "participacao_do_perfil": 1.0,
+    "perfis_2025": {
+     "Granel Líquido e Gasoso": 10261272.627999997
+    },
+    "tipo_cadastro": "Terminal de uso privado",
+    "codigo_cadastro": "BRSC007",
+    "coord_fonte": "aproximada"
+   },
+   {
+    "nome": "Terminal de Praia Mole",
+    "tipo": "tup",
+    "municipio": "Vitória",
+    "uf": "ES",
+    "lat": -20.28,
+    "lon": -40.23,
+    "toneladas_2025": 10162969.733,
+    "perfil_predominante": "Granel Sólido",
+    "participacao_do_perfil": 1.0,
+    "perfis_2025": {
+     "Granel Sólido": 10162969.733
+    },
+    "tipo_cadastro": "Terminal de uso privado",
+    "codigo_cadastro": "BRES003",
+    "coord_fonte": "aproximada"
+   },
+   {
+    "nome": "Terminal Portuário Graneleiro de Barcarena",
+    "tipo": "tup",
+    "municipio": "Barcarena",
+    "uf": "PA",
+    "lat": -1.525,
+    "lon": -48.735,
+    "toneladas_2025": 9787071.66,
+    "perfil_predominante": "Granel Sólido",
+    "participacao_do_perfil": 1.0,
+    "perfis_2025": {
+     "Granel Sólido": 9787071.660000004
+    },
+    "tipo_cadastro": "Terminal de uso privado",
+    "codigo_cadastro": "BRPA018",
+    "coord_fonte": "aproximada"
+   },
+   {
+    "nome": "Porto Chibatão",
+    "tipo": "tup",
+    "municipio": "Manaus",
+    "uf": "AM",
+    "lat": -3.135,
+    "lon": -59.99,
+    "toneladas_2025": 8394340.61200001,
+    "perfil_predominante": "Carga Conteinerizada",
+    "participacao_do_perfil": 0.9289504573894222,
+    "perfis_2025": {
+     "Carga Conteinerizada": 7797926.551000026,
+     "Carga Geral": 515409.29799999995,
+     "Granel Sólido": 81004.763
+    },
+    "tipo_cadastro": "Terminal de uso privado",
+    "codigo_cadastro": "BRAM006",
+    "coord_fonte": "aproximada"
+   }
+  ],
+  "ressalvas": [
+   "TODAS as coordenadas são aproximadas (conhecimento geral do porto/terminal): nenhum dos painéis consultados (infra_aquaviaria, instalacoes_privadas, estatistico_aquaviario, administracao_portuaria, portos_publicos, movimentacao_portuaria) publica latitude/longitude; o cadastro de terminais só traz endereço textual. Precisão de escala nacional, não de berço.",
+   "Os 25 TUPs são os 25 maiores terminais autorizados do EA em 2025; todos constam como \"Terminal de uso privado\" no cadastro.",
+   "Barra do Riacho e Laguna (portos organizados) não têm linha no EA; Forno e Manaus aparecem com 0 t.",
+   "Pontos muito próximos (Itaqui x Ponta da Madeira; Tubarão x Praia Mole x Vitória; Açu TPET/TOIL x Açu Minério; São Sebastião x TEBAR) vão se sobrepor em escala Brasil."
+  ]
+ },
+ "contagens": {
+  "portos_organizados": {
+   "valor": 35,
+   "fonte": {
+    "painel": "administracao_portuaria",
+    "quadro": "LISTA GERAL"
+   },
+   "atualizado_em": "2026-11-16T13:04:46.684060Z",
+   "conferencia": "infra_aquaviaria (ONTL) KPI \"Portos Organizados\" = 35 (valor fixo digitado no app de origem); 33 deles têm linha no Estatístico Aquaviário 2025."
+  },
+  "instalacoes_privadas_cadastro": {
+   "fonte": {
+    "painel": "instalacoes_privadas",
+    "quadro": "Detalhamento dos terminais"
+   },
+   "atualizado_em": "2026-11-16T13:00:49.538912Z",
+   "criterio": "linhas do cadastro (autorizadas + registradas), SEM filtro de situação operacional — o detalhe não tem coluna de situação, então não há como contar \"TUPs em operação\".",
+   "total_linhas": 672,
+   "por_tipo": {
+    "Estação de transbordo de cargas": 53,
+    "Instalação portuária de turismo": 6,
+    "Registro - Estaleiro": 34,
+    "Registro - Estaleiro até 1.000 TPB": 4,
+    "Registro - Instalação de apoio": 235,
+    "Registro - Instalação flutuante": 20,
+    "Registro - Instalação para transferência de petróleo": 1,
+    "Registro - Instalação portuária pública de pequeno porte": 58,
+    "Registro - Instalação rudimentar": 11,
+    "Registro - Instalação temporária": 1,
+    "Terminal de uso privado": 249
+   },
+   "TUP": 249,
+   "ETC": 53,
+   "IPT_instalacao_portuaria_de_turismo": 6,
+   "IP4_instalacao_portuaria_publica_de_pequeno_porte": 58,
+   "autorizadas_x_registradas_do_painel": {
+    "Registrada": 379,
+    "Autorizada": 292
+   },
+   "situacao_operacional_do_painel": {
+    "Em Operação": 597,
+    "None": 58,
+    "Construção Concluída": 8,
+    "Construção Iniciada": 5,
+    "INOPERANTE": 1,
+    "Operando": 1
+   },
+   "ressalvas": [
+    "Autorizada (292) + Registrada (379) = 671, e a situação soma 670, contra 672 linhas no detalhe; TUP+ETC+IPT = 308, diferente das 292 \"autorizadas\" do painel — o painel não explica a diferença.",
+    "\"Em Operação\" (597) vale para o conjunto (TUP, ETC, IP4, apoio, estaleiros etc.) e não se cruza com o tipo.",
+    "A descrição da ferramenta fala em 668 instalações; o cadastro capturado hoje tem 672."
+   ]
+  },
+  "outras_fontes_de_contagem": {
+   "infra_aquaviaria_KPIs": {
+    "atualizado_em": "2026-11-16T13:24:10.446486Z",
+    "valores": {
+     "Última Carga": "2026-04-08 09:59",
+     "Portos Organizados": 35,
+     "TUPs": 142,
+     "IP4": 43,
+     "Eclusas": 8
+    },
+    "nota": "Valores FIXOS digitados no app ONTL; podem defasar do cadastro (ex.: TUPs 142 x 249 no cadastro ANTAQ).",
+    "instalacoes_por_tipo": {
+     "IP4": 136,
+     "Atracadouro": 21
+    },
+    "instalacoes_por_status": {
+     "Em operação": 67,
+     "Sem Informação": 42,
+     "Planejamento": 34,
+     "Fora de operação": 8,
+     "Em operação restrita": 4,
+     "Delegada": 2
+    }
+   },
+   "movimentacao_portuaria_ONTL_KPIs": {
+    "atualizado_em": "2026-11-16T13:24:27.213938Z",
+    "valores": {
+     "Instalações portuárias": 176,
+     "Terminais públicos": 91,
+     "Berços atracação": 385,
+     "Movimentação": "103.963.208 ton.",
+     "Terminais de uso privado": 123,
+     "Terminais arrendados": 67,
+     "Última Carga": "2026-04-13 15:56"
+    },
+    "nota": "KPIs do recorte corrente do painel ONTL (2026 parcial); não é cadastro."
+   },
+   "estatistico_aquaviario_instalacoes_com_movimentacao_2025": {
+    "total_com_peso_maior_que_zero": 197,
+    "terminais_autorizados_com_peso_maior_que_zero": 166,
+    "portos_organizados_com_peso_maior_que_zero": 31,
+    "linhas_no_quadro_2025": 217
+   }
+  },
+  "contratos_portos_publicos": {
+   "fonte": {
+    "painel": "portos_publicos",
+    "quadro": "Portos Públicos",
+    "ferramenta": "terminais_contratos_e_tarifas (visao=arrendamentos, vigencia=vigente)"
+   },
+   "atualizado_em": "2026-09-28T13:01:40.330263Z",
+   "referencia_da_vigencia": "2026-11-16",
+   "criterio": "data de expiração do último instrumento comparada com hoje",
+   "vigentes_todos_os_tipos": {
+    "linhas": 226,
+    "codigos_distintos": 221,
+    "portos": 30,
+    "por_tipo": {
+     "Arrendamento": 141,
+     "Concessão": 2,
+     "Contrato de Passagem": 74,
+     "Contrato de Transição": 4,
+     "Contrato de Uso Temporário": 5
+    }
+   },
+   "arrendamentos_vigentes": {
+    "linhas": 141,
+    "codigos_distintos": 141,
+    "portos": 26
+   },
+   "acervo_total": {
+    "linhas": 559,
+    "codigos_distintos": 535,
+    "portos": 34,
+    "por_tipo": {
+     "Arrendamento": 323,
+     "Concessão": 2,
+     "Contrato de Passagem": 106,
+     "Contrato de Transição": 99,
+     "Contrato de Uso Temporário": 29
+    },
+    "expirados_pela_data": 333
+   },
+   "contadores_do_proprio_painel": {
+    "Contrato Não Expirado": 254,
+    "Contrato Expirado": 225,
+    "Sob Decisão Judicial": 12
+   },
+   "ressalvas": [
+    "O quadro \"Situação do Contrato\" do painel classifica só 491 dos 559 contratos e dá 254 \"não expirados\"; pela data de expiração são 226 vigentes (todos os tipos) — use a conta pela data.",
+    "Código de contrato não é chave: 535 códigos distintos em 559 linhas (vigentes: 221 códigos em 226 linhas).",
+    "Painel portos_publicos capturado em 2026-09-28 (mais antigo que os demais); a vigência foi recalculada com a data de hoje.",
+    "\"Vigentes\" inclui contratos de passagem, transição, uso temporário e concessão; o arrendamento em sentido estrito é a linha arrendamentos_vigentes."
+   ]
+  }
+ }
+}
